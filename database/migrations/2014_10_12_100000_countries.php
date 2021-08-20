@@ -18,7 +18,7 @@ class Countries extends Migration
             $table->string('post_type')->default('country');
             $table->enum('status', ['public', 'hide', 'basket'])->default('public');
             $table->string('permalink');
-            $table->string('slug')->default('cauntry');
+            $table->string('slug')->default('country');
             $table->string('title');
             $table->string('thumbnail', 300);
             $table->string('short_desc', 500);
