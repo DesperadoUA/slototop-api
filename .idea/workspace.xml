@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="612891bd-e6d1-407d-8831-4c27fedf3233" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/Api/AdminPokerController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/Api/AdminGameController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/routes/api.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/api.php" afterDir="false" />
     </list>
@@ -17,7 +17,7 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Api/BaseController.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="222">
@@ -37,14 +37,13 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Api/AdminCasinoController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="272">
-              <caret line="101" column="43" selection-start-line="101" selection-start-column="43" selection-end-line="101" selection-end-column="43" />
+            <state relative-caret-position="357">
+              <caret line="112" column="9" lean-forward="true" selection-start-line="107" selection-start-column="8" selection-end-line="112" selection-end-column="9" />
               <folding>
                 <element signature="e#45#73#0#PHP" expanded="true" />
                 <element signature="e#277#1443#0#PHP" />
                 <element signature="e#2031#2525#0#PHP" />
                 <element signature="e#2531#3255#0#PHP" />
-                <element signature="e#3619#5984#0#PHP" />
                 <element signature="e#5990#6770#0#PHP" />
               </folding>
             </state>
@@ -54,19 +53,24 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/routes/api.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="256">
-              <caret line="30" column="67" lean-forward="true" selection-start-line="30" selection-start-column="67" selection-end-line="30" selection-end-column="67" />
+            <state relative-caret-position="392">
+              <caret line="42" column="45" selection-start-line="42" selection-start-column="45" selection-end-line="42" selection-end-column="45" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Api/AdminSearchController.php">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Api/AdminGameController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="289">
-              <caret line="17" column="71" selection-start-line="17" selection-start-column="58" selection-end-line="17" selection-end-column="71" />
+            <state relative-caret-position="290">
+              <caret line="181" column="45" lean-forward="true" selection-start-line="181" selection-start-column="45" selection-end-line="181" selection-end-column="45" />
               <folding>
-                <element signature="e#44#72#0#PHP" expanded="true" />
+                <element signature="e#45#73#0#PHP" expanded="true" />
+                <element signature="e#273#1439#0#PHP" />
+                <element signature="e#1445#2021#0#PHP" />
+                <element signature="e#2027#2521#0#PHP" />
+                <element signature="e#2527#3251#0#PHP" />
+                <element signature="e#3257#3582#0#PHP" />
               </folding>
             </state>
           </provider>
@@ -105,67 +109,6 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Api/AdminPokerController.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="296">
-              <caret line="198" column="44" selection-start-line="198" selection-start-column="44" selection-end-line="198" selection-end-column="44" />
-              <folding>
-                <element signature="e#3683#3847#0#PHP" />
-                <element signature="e#3784#3847#0#PHP" />
-                <element signature="e#3856#4036#0#PHP" />
-                <element signature="e#3969#4036#0#PHP" />
-                <element signature="e#4192#4339#0#PHP" />
-                <element signature="e#4287#4339#0#PHP" />
-                <element signature="e#4348#4505#0#PHP" />
-                <element signature="e#4442#4505#0#PHP" />
-                <element signature="e#4381#4520#0#PHP" />
-                <element signature="e#4468#4520#0#PHP" />
-                <element signature="e#4539#4690#0#PHP" />
-                <element signature="e#4635#4690#0#PHP" />
-                <element signature="e#4704#4851#0#PHP" />
-                <element signature="e#4797#4851#0#PHP" />
-                <element signature="e#4859#4998#0#PHP" />
-                <element signature="e#4946#4998#0#PHP" />
-                <element signature="e#5048#5220#0#PHP" />
-                <element signature="e#5162#5220#0#PHP" />
-                <element signature="e#5231#5406#0#PHP" />
-                <element signature="e#5347#5406#0#PHP" />
-                <element signature="e#5387#5534#0#PHP" />
-                <element signature="e#5482#5534#0#PHP" />
-                <element signature="e#5539#5682#0#PHP" />
-                <element signature="e#5631#5682#0#PHP" />
-                <element signature="e#5691#5834#0#PHP" />
-                <element signature="e#5783#5834#0#PHP" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/Models/Relative.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="323">
-              <caret line="20" column="61" selection-start-line="20" selection-start-column="61" selection-end-line="20" selection-end-column="61" />
-              <folding>
-                <element signature="e#29#68#0#PHP" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/Models/Category.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="221">
-              <caret line="14" column="24" selection-start-line="14" selection-start-column="24" selection-end-line="14" selection-end-column="24" />
-              <folding>
-                <element signature="e#29#68#0#PHP" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
     </leaf>
   </component>
   <component name="FindInProjectRecents">
@@ -188,9 +131,10 @@
         <option value="$PROJECT_DIR$/app/CardBuilder.php" />
         <option value="$PROJECT_DIR$/app/Models/Posts.php" />
         <option value="$PROJECT_DIR$/app/Http/Controllers/Api/AdminPokerController.php" />
-        <option value="$PROJECT_DIR$/routes/api.php" />
         <option value="$PROJECT_DIR$/app/Http/Controllers/Api/AdminCasinoController.php" />
         <option value="$PROJECT_DIR$/app/Http/Controllers/Api/BaseController.php" />
+        <option value="$PROJECT_DIR$/routes/api.php" />
+        <option value="$PROJECT_DIR$/app/Http/Controllers/Api/AdminGameController.php" />
       </list>
     </option>
   </component>
@@ -388,12 +332,12 @@
       <updated>1625211076935</updated>
       <workItem from="1625211078162" duration="180000" />
       <workItem from="1629876067119" duration="17431000" />
-      <workItem from="1629961058793" duration="10070000" />
+      <workItem from="1629961058793" duration="11966000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="27681000" />
+    <option name="totallyTimeSpent" value="29577000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
@@ -519,21 +463,32 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/Models/Posts.php">
+    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Api/BaseController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="142">
-          <caret line="207" column="35" selection-start-line="207" selection-start-column="35" selection-end-line="207" selection-end-column="35" />
+        <state relative-caret-position="222">
+          <caret line="21" column="19" selection-start-line="21" selection-start-column="19" selection-end-line="21" selection-end-column="19" />
           <folding>
-            <element signature="e#30#69#0#PHP" expanded="true" />
+            <element signature="e#42#78#0#PHP" expanded="true" />
+            <element signature="e#519#1480#0#PHP" />
+            <element signature="e#1485#4734#0#PHP" />
+            <element signature="e#4739#5434#0#PHP" />
+            <element signature="e#5439#8379#0#PHP" />
+            <element signature="e#8384#9187#0#PHP" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Api/AdminPokerController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="296">
-          <caret line="198" column="44" selection-start-line="198" selection-start-column="44" selection-end-line="198" selection-end-column="44" />
+        <state relative-caret-position="171">
+          <caret line="73" column="5" lean-forward="true" selection-start-line="73" selection-start-column="5" selection-end-line="73" selection-end-column="5" />
           <folding>
+            <element signature="e#277#1443#0#PHP" />
+            <element signature="e#1449#2025#0#PHP" />
+            <element signature="e#2031#2525#0#PHP" />
+            <element signature="e#2531#3255#0#PHP" />
+            <element signature="e#3261#3586#0#PHP" />
+            <element signature="e#3592#5957#0#PHP" />
             <element signature="e#3683#3847#0#PHP" />
             <element signature="e#3784#3847#0#PHP" />
             <element signature="e#3856#4036#0#PHP" />
@@ -560,43 +515,53 @@
             <element signature="e#5631#5682#0#PHP" />
             <element signature="e#5691#5834#0#PHP" />
             <element signature="e#5783#5834#0#PHP" />
+            <element signature="e#5963#6763#0#PHP" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Models/Posts.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="142">
+          <caret line="207" column="35" selection-start-line="207" selection-start-column="35" selection-end-line="207" selection-end-column="35" />
+          <folding>
+            <element signature="e#30#69#0#PHP" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/routes/api.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="256">
-          <caret line="30" column="67" lean-forward="true" selection-start-line="30" selection-start-column="67" selection-end-line="30" selection-end-column="67" />
+        <state relative-caret-position="392">
+          <caret line="42" column="45" selection-start-line="42" selection-start-column="45" selection-end-line="42" selection-end-column="45" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Api/AdminCasinoController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="101" column="43" selection-start-line="101" selection-start-column="43" selection-end-line="101" selection-end-column="43" />
+        <state relative-caret-position="357">
+          <caret line="112" column="9" lean-forward="true" selection-start-line="107" selection-start-column="8" selection-end-line="112" selection-end-column="9" />
           <folding>
             <element signature="e#45#73#0#PHP" expanded="true" />
             <element signature="e#277#1443#0#PHP" />
             <element signature="e#2031#2525#0#PHP" />
             <element signature="e#2531#3255#0#PHP" />
-            <element signature="e#3619#5984#0#PHP" />
             <element signature="e#5990#6770#0#PHP" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Api/BaseController.php">
+    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Api/AdminGameController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="222">
-          <caret line="21" column="19" selection-start-line="21" selection-start-column="19" selection-end-line="21" selection-end-column="19" />
+        <state relative-caret-position="290">
+          <caret line="181" column="45" lean-forward="true" selection-start-line="181" selection-start-column="45" selection-end-line="181" selection-end-column="45" />
           <folding>
-            <element signature="e#42#78#0#PHP" expanded="true" />
-            <element signature="e#519#1480#0#PHP" />
-            <element signature="e#1485#4734#0#PHP" />
-            <element signature="e#4739#5434#0#PHP" />
-            <element signature="e#5439#8379#0#PHP" />
-            <element signature="e#8384#9187#0#PHP" />
+            <element signature="e#45#73#0#PHP" expanded="true" />
+            <element signature="e#273#1439#0#PHP" />
+            <element signature="e#1445#2021#0#PHP" />
+            <element signature="e#2027#2521#0#PHP" />
+            <element signature="e#2527#3251#0#PHP" />
+            <element signature="e#3257#3582#0#PHP" />
           </folding>
         </state>
       </provider>

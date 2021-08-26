@@ -24,17 +24,23 @@ Route::namespace('Api')->group(function () {
     Route::post('admin/media', 'AdminUploadsController@media')->middleware('api_auth');
     Route::post('admin/delete-media', 'AdminUploadsController@delete')->middleware('api_auth');
 
-    Route::post('admin/casinos', 'AdminCasinoController@index');
-    Route::post('admin/casino/update', 'AdminCasinoController@update');
-    Route::post('admin/casino/delete', 'AdminCasinoController@delete');
-    Route::post('admin/casino/store', 'AdminCasinoController@store');
-    Route::post('admin/casino/{id}', 'AdminCasinoController@show');
+    Route::post('admin/casinos', 'AdminCasinoController@index')->middleware('api_auth');
+    Route::post('admin/casino/update', 'AdminCasinoController@update')->middleware('api_auth');
+    Route::post('admin/casino/delete', 'AdminCasinoController@delete')->middleware('api_auth');
+    Route::post('admin/casino/store', 'AdminCasinoController@store')->middleware('api_auth');
+    Route::post('admin/casino/{id}', 'AdminCasinoController@show')->middleware('api_auth');
 
-    Route::post('admin/pokers', 'AdminPokerController@index');
-    Route::post('admin/poker/update', 'AdminPokerController@update');
-    Route::post('admin/poker/delete', 'AdminPokerController@delete');
-    Route::post('admin/poker/store', 'AdminPokerController@store');
-    Route::post('admin/poker/{id}', 'AdminPokerController@show');
+    Route::post('admin/pokers', 'AdminPokerController@index')->middleware('api_auth');
+    Route::post('admin/poker/update', 'AdminPokerController@update')->middleware('api_auth');
+    Route::post('admin/poker/delete', 'AdminPokerController@delete')->middleware('api_auth');
+    Route::post('admin/poker/store', 'AdminPokerController@store')->middleware('api_auth');
+    Route::post('admin/poker/{id}', 'AdminPokerController@show')->middleware('api_auth');
+
+    Route::post('admin/games', 'AdminGameController@index')->middleware('api_auth');
+    Route::post('admin/game/update', 'AdminGameController@update')->middleware('api_auth');
+    Route::post('admin/game/delete', 'AdminGameController@delete')->middleware('api_auth');
+    Route::post('admin/game/store', 'AdminGameController@store')->middleware('api_auth');
+    Route::post('admin/game/{id}', 'AdminGameController@show')->middleware('api_auth');
 
     Route::get('settings', 'SettingsController@index');
     Route::get('options', 'OptionsController@index');
