@@ -30,6 +30,12 @@ Route::namespace('Api')->group(function () {
     Route::post('admin/casino/store', 'AdminCasinoController@store');
     Route::post('admin/casino/{id}', 'AdminCasinoController@show');
 
+    Route::post('admin/pokers', 'AdminPokerController@index');
+    Route::post('admin/poker/update', 'AdminPokerController@update');
+    Route::post('admin/poker/delete', 'AdminPokerController@delete');
+    Route::post('admin/poker/store', 'AdminPokerController@store');
+    Route::post('admin/poker/{id}', 'AdminPokerController@show');
+
     Route::get('settings', 'SettingsController@index');
     Route::get('options', 'OptionsController@index');
 
