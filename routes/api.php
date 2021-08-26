@@ -25,9 +25,9 @@ Route::namespace('Api')->group(function () {
     Route::post('admin/delete-media', 'AdminUploadsController@delete')->middleware('api_auth');
 
     Route::post('admin/casinos', 'AdminCasinoController@index');
-    Route::get('admin/casino/update', 'AdminCasinoController@update');
-    Route::get('admin/casino/delete', 'AdminCasinoController@delete');
-    Route::get('admin/casino/store', 'AdminCasinoController@store');
+    Route::post('admin/casino/update', 'AdminCasinoController@update');
+    Route::post('admin/casino/delete', 'AdminCasinoController@delete');
+    Route::post('admin/casino/store', 'AdminCasinoController@store');
     Route::post('admin/casino/{id}', 'AdminCasinoController@show');
 
     Route::get('settings', 'SettingsController@index');

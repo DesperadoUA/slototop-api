@@ -201,19 +201,16 @@ class Posts extends Model
         */
     }
 
-    public static function searchByTitle($lang, $post_type, $str)
+    public static function searchByTitle($lang, $db, $str)
     {
-        /*
         $posts = [];
         if (!empty($str)) {
-            $posts = DB::table(self::TABLE)
-                ->where('post_type', $post_type)
+            $posts = DB::table($db)
                 ->where('lang', $lang)
                 ->where('title', 'like', '%' . $str . '%')
                 ->get();
         }
         return $posts;
-        */
     }
 
     public function getPublicPostsByArrId($arr)

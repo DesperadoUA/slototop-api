@@ -60,14 +60,14 @@ class BaseController extends Controller {
             $newData['status'] = 'public';
         }
 
-        if(isset($data['create_at'])) {
+        if(isset($data['created_at'])) {
             $newData['created_at'] = $data['created_at'];
         }
         else {
             $newData['created_at'] = date('Y-m-d');
         }
 
-        if(isset($data['update_at'])) {
+        if(isset($data['updated_at'])) {
             $newData['updated_at'] = $data['updated_at'];
         }
         else {
@@ -124,7 +124,7 @@ class BaseController extends Controller {
             $newData['thumbnail'] = config('constants.DEFAULT_SRC');
         }
 
-        if(isset($data['title'])) {
+        if(!isset($data['permalink'])) {
             $newData['permalink'] = self::permalinkInsert($data['title'], $main_table, $meta_table);
         }
 
@@ -152,7 +152,7 @@ class BaseController extends Controller {
     }
     protected static function permalinkInsert($permalink, $main_table, $meta_table) {
         $permalink = str_slug($permalink);
-        $post = $post = new Posts(['table' => $main_table, 'table_meta' => $meta_table]);
+        $post = new Posts(['table' => $main_table, 'table_meta' => $meta_table]);
         $candidate = $post->getByPermalink($permalink);
         if($candidate->isEmpty()) {
             return $permalink;

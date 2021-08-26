@@ -47,7 +47,7 @@ class AdminCasinoController extends BaseController
             'body' => [],
             'confirm' => 'ok'
         ];
-        $data_save = self::dataValidateInsert($request->input('data'), self::META_TABLE, self::META_TABLE);
+        $data_save = self::dataValidateInsert($request->input('data'), self::MAIN_TABLE, self::META_TABLE);
         $data_meta = self::dataValidateMetaSave($request->input('data'));
         $post = new Posts(['table' => self::MAIN_TABLE, 'table_meta' => self::META_TABLE]);
         $response['insert_id'] = $post->insert($data_save, $data_meta);
@@ -98,8 +98,7 @@ class AdminCasinoController extends BaseController
             'confirm' => 'ok'
         ];
         $post = new Posts(['table' => self::MAIN_TABLE, 'table_meta' => self::META_TABLE]);
-        $data = $request->input('data');
-        $post->deleteById($data->id);
+        $post->deleteById($request->input('data'));
         return response()->json($response);
     }
 
@@ -189,7 +188,7 @@ class AdminCasinoController extends BaseController
         $newData['reviews'] = json_decode($data->reviews, true);
         $newData['close'] = $data->close;
         $newData['rating'] = (int)$data->rating;
-        $newData['ref'] = $data->ref;
+        $newData['ref'] = json_decode($data->ref, true);;
         $newData['phone'] = $data->phone;
         $newData['min_deposit'] = $data->min_deposit;
         $newData['min_payments'] = $data->min_payments;
