@@ -54,6 +54,12 @@ Route::namespace('Api')->group(function () {
     Route::post('admin/country/store', 'AdminCountryController@store')->middleware('api_auth');
     Route::post('admin/country/{id}', 'AdminCountryController@show')->middleware('api_auth');
 
+    Route::post('admin/currencies', 'AdminCurrencyController@index')->middleware('api_auth');
+    Route::post('admin/currency/update', 'AdminCurrencyController@update')->middleware('api_auth');
+    Route::post('admin/currency/delete', 'AdminCurrencyController@delete')->middleware('api_auth');
+    Route::post('admin/currency/store', 'AdminCurrencyController@store')->middleware('api_auth');
+    Route::post('admin/currency/{id}', 'AdminCurrencyController@show')->middleware('api_auth');
+
     Route::get('settings', 'SettingsController@index');
     Route::get('options', 'OptionsController@index');
 
