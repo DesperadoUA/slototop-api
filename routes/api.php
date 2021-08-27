@@ -90,6 +90,12 @@ Route::namespace('Api')->group(function () {
     Route::post('admin/payment/store', 'AdminPaymentController@store')->middleware('api_auth');
     Route::post('admin/payment/{id}', 'AdminPaymentController@show')->middleware('api_auth');
 
+    Route::post('admin/vendors', 'AdminVendorController@index')->middleware('api_auth');
+    Route::post('admin/vendor/update', 'AdminVendorController@update')->middleware('api_auth');
+    Route::post('admin/vendor/delete', 'AdminVendorController@delete')->middleware('api_auth');
+    Route::post('admin/vendor/store', 'AdminVendorController@store')->middleware('api_auth');
+    Route::post('admin/vendor/{id}', 'AdminVendorController@show')->middleware('api_auth');
+
     Route::get('settings', 'SettingsController@index');
     Route::get('options', 'OptionsController@index');
 
