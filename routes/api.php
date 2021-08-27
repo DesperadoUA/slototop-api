@@ -60,6 +60,12 @@ Route::namespace('Api')->group(function () {
     Route::post('admin/currency/store', 'AdminCurrencyController@store')->middleware('api_auth');
     Route::post('admin/currency/{id}', 'AdminCurrencyController@show')->middleware('api_auth');
 
+    Route::post('admin/languages', 'AdminLanguageController@index')->middleware('api_auth');
+    Route::post('admin/language/update', 'AdminLanguageController@update')->middleware('api_auth');
+    Route::post('admin/language/delete', 'AdminLanguageController@delete')->middleware('api_auth');
+    Route::post('admin/language/store', 'AdminLanguageController@store')->middleware('api_auth');
+    Route::post('admin/language/{id}', 'AdminLanguageController@show')->middleware('api_auth');
+
     Route::get('settings', 'SettingsController@index');
     Route::get('options', 'OptionsController@index');
 
