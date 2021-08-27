@@ -66,6 +66,12 @@ Route::namespace('Api')->group(function () {
     Route::post('admin/language/store', 'AdminLanguageController@store')->middleware('api_auth');
     Route::post('admin/language/{id}', 'AdminLanguageController@show')->middleware('api_auth');
 
+    Route::post('admin/licenses', 'AdminLicenseController@index')->middleware('api_auth');
+    Route::post('admin/license/update', 'AdminLicenseController@update')->middleware('api_auth');
+    Route::post('admin/license/delete', 'AdminLicenseController@delete')->middleware('api_auth');
+    Route::post('admin/license/store', 'AdminLicenseController@store')->middleware('api_auth');
+    Route::post('admin/license/{id}', 'AdminLicenseController@show')->middleware('api_auth');
+
     Route::get('settings', 'SettingsController@index');
     Route::get('options', 'OptionsController@index');
 
