@@ -48,6 +48,12 @@ Route::namespace('Api')->group(function () {
     Route::post('admin/bonus/store', 'AdminBonusController@store')->middleware('api_auth');
     Route::post('admin/bonus/{id}', 'AdminBonusController@show')->middleware('api_auth');
 
+    Route::post('admin/countries', 'AdminCountryController@index')->middleware('api_auth');
+    Route::post('admin/country/update', 'AdminCountryController@update')->middleware('api_auth');
+    Route::post('admin/country/delete', 'AdminCountryController@delete')->middleware('api_auth');
+    Route::post('admin/country/store', 'AdminCountryController@store')->middleware('api_auth');
+    Route::post('admin/country/{id}', 'AdminCountryController@show')->middleware('api_auth');
+
     Route::get('settings', 'SettingsController@index');
     Route::get('options', 'OptionsController@index');
 
