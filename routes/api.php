@@ -84,6 +84,12 @@ Route::namespace('Api')->group(function () {
     Route::post('admin/type-payment/store', 'AdminTypePaymentController@store')->middleware('api_auth');
     Route::post('admin/type-payment/{id}', 'AdminTypePaymentController@show')->middleware('api_auth');
 
+    Route::post('admin/payments', 'AdminPaymentController@index')->middleware('api_auth');
+    Route::post('admin/payment/update', 'AdminPaymentController@update')->middleware('api_auth');
+    Route::post('admin/payment/delete', 'AdminPaymentController@delete')->middleware('api_auth');
+    Route::post('admin/payment/store', 'AdminPaymentController@store')->middleware('api_auth');
+    Route::post('admin/payment/{id}', 'AdminPaymentController@show')->middleware('api_auth');
+
     Route::get('settings', 'SettingsController@index');
     Route::get('options', 'OptionsController@index');
 
