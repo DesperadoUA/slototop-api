@@ -15,7 +15,7 @@ class TypePayments extends Migration
     {
         Schema::create('type_payments', function (Blueprint $table) {
             $table->bigIncrements('id');
-            $table->string('post_type')->default('type-payments');
+            $table->string('post_type')->default('type-payment');
             $table->enum('status', ['public', 'hide', 'basket'])->default('public');
             $table->string('permalink');
             $table->string('slug')->default('type-payment');
