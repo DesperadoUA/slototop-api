@@ -7,11 +7,11 @@ use Illuminate\Http\Request;
 use App\Models\Posts;
 use App\Validate;
 
-class AdminCasinoController extends BaseController
+class AdminBonusController extends BaseController
 {
-    const POST_TYPE = 'casino';
-    const MAIN_TABLE = 'casinos';
-    const META_TABLE = 'casino_meta';
+    const POST_TYPE = 'bonus';
+    const MAIN_TABLE = 'bonuses';
+    const META_TABLE = 'bonus_meta';
 
     public function index(Request $request)
     {
@@ -105,77 +105,31 @@ class AdminCasinoController extends BaseController
     protected static function dataValidateMetaSave($data)
     {
         $newData = [];
-        if(isset($data['faq'])) {
-            $newData['faq'] = json_encode($data['faq']);
-        }
-        else {
-            $newData['faq'] = json_encode([]);
-        }
-        if(isset($data['reviews'])) {
-            $newData['reviews'] = json_encode($data['reviews']);
-        }
-        else {
-            $newData['reviews'] = json_encode([]);
-        }
+
         if (isset($data['close'])) {
             $newData['close'] = $data['close'];
         } else {
             $newData['close'] = 0;
-        }
-        if (isset($data['rating'])) {
-            $newData['rating'] = (int)$data['rating'];
-        } else {
-            $newData['rating'] = 0;
         }
         if (isset($data['ref'])) {
             $newData['ref'] = json_encode($data['ref']);
         } else {
             $newData['ref'] = json_encode([]);
         }
-        if (isset($data['phone'])) {
-            $newData['phone'] = $data['phone'];
+        if (isset($data['wager'])) {
+            $newData['wager'] = $data['wager'];
         } else {
-            $newData['phone'] = '';
+            $newData['wager'] = '';
         }
-        if (isset($data['min_deposit'])) {
-            $newData['min_deposit'] = $data['min_deposit'];
+        if (isset($data['number_use'])) {
+            $newData['number_use'] = $data['number_use'];
         } else {
-            $newData['min_deposit'] = '';
+            $newData['number_use'] = '';
         }
-        if (isset($data['min_payments'])) {
-            $newData['min_payments'] = $data['min_payments'];
+        if (isset($data['value_bonus'])) {
+            $newData['value_bonus'] = $data['value_bonus'];
         } else {
-            $newData['min_payments'] = '';
-        }
-        if (isset($data['email'])) {
-            $newData['email'] = $data['email'];
-        } else {
-            $newData['email'] = '';
-        }
-        if (isset($data['chat'])) {
-            $newData['chat'] = $data['chat'];
-        } else {
-            $newData['chat'] = '';
-        }
-        if (isset($data['year'])) {
-            $newData['year'] = $data['year'];
-        } else {
-            $newData['year'] = '';
-        }
-        if (isset($data['site'])) {
-            $newData['site'] = $data['site'];
-        } else {
-            $newData['site'] = '';
-        }
-        if (isset($data['withdrawal'])) {
-            $newData['withdrawal'] = $data['withdrawal'];
-        } else {
-            $newData['withdrawal'] = '';
-        }
-        if (isset($data['number_games'])) {
-            $newData['number_games'] = $data['number_games'];
-        } else {
-            $newData['number_games'] = '';
+            $newData['value_bonus'] = '';
         }
 
         return $newData;
@@ -184,20 +138,12 @@ class AdminCasinoController extends BaseController
     protected static function dataMetaDecode($data)
     {
         $newData = [];
-        $newData['faq'] = json_decode($data->faq, true);
-        $newData['reviews'] = json_decode($data->reviews, true);
         $newData['close'] = $data->close;
-        $newData['rating'] = (int)$data->rating;
         $newData['ref'] = json_decode($data->ref, true);
-        $newData['phone'] = $data->phone;
-        $newData['min_deposit'] = $data->min_deposit;
-        $newData['min_payments'] = $data->min_payments;
-        $newData['email'] = $data->email;
-        $newData['chat'] = $data->chat;
-        $newData['year'] = $data->year;
-        $newData['site'] = $data->site;
-        $newData['withdrawal'] = $data->withdrawal;
-        $newData['number_games'] = $data->number_games;
+        $newData['wager'] = $data->wager;
+        $newData['number_use'] = $data->number_use;
+        $newData['value_bonus'] = $data->value_bonus;
+
         return $newData;
     }
 }

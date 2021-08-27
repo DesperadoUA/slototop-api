@@ -42,6 +42,12 @@ Route::namespace('Api')->group(function () {
     Route::post('admin/game/store', 'AdminGameController@store')->middleware('api_auth');
     Route::post('admin/game/{id}', 'AdminGameController@show')->middleware('api_auth');
 
+    Route::post('admin/bonuses', 'AdminBonusController@index')->middleware('api_auth');
+    Route::post('admin/bonus/update', 'AdminBonusController@update')->middleware('api_auth');
+    Route::post('admin/bonus/delete', 'AdminBonusController@delete')->middleware('api_auth');
+    Route::post('admin/bonus/store', 'AdminBonusController@store')->middleware('api_auth');
+    Route::post('admin/bonus/{id}', 'AdminBonusController@show')->middleware('api_auth');
+
     Route::get('settings', 'SettingsController@index');
     Route::get('options', 'OptionsController@index');
 
