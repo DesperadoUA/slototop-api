@@ -7,11 +7,11 @@ use Illuminate\Http\Request;
 use App\Models\Posts;
 use App\Validate;
 
-class AdminLicenseController extends BaseController
+class AdminTechnologyController extends BaseController
 {
-    const POST_TYPE = 'license';
-    const MAIN_TABLE = 'licenses';
-    const META_TABLE = 'license_meta';
+    const POST_TYPE = 'technology';
+    const MAIN_TABLE = 'technologies';
+    const META_TABLE = 'technology_meta';
 
     public function index(Request $request)
     {
