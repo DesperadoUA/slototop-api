@@ -7,13 +7,13 @@ use Illuminate\Http\Request;
 use App\Models\Category;
 use Illuminate\Support\Facades\DB;
 
-class AdminCasinoCategoryController extends BaseController
+class AdminPokerCategoryController extends BaseController
 {
-    const POST_TYPE = 'casino';
-    const MAIN_TABLE = 'casinos';
-    const META_TABLE = 'casino_meta';
-    const CATEGORY_TABLE = 'casino_category';
-    const RELATIVE_TABLE = 'casino_category_relative';
+    const POST_TYPE = 'poker';
+    const MAIN_TABLE = 'pokers';
+    const META_TABLE = 'poker_meta';
+    const CATEGORY_TABLE = 'poker_category';
+    const RELATIVE_TABLE = 'poker_category_relative';
 
     public function index(Request $request)
     {
