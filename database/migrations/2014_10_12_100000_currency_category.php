@@ -16,10 +16,10 @@ class CurrencyCategory extends Migration
         Schema::create('currency_category', function (Blueprint $table) {
             $table->bigIncrements('id');
             $table->integer('parent_id')->default(0);
-            $table->string('post_type')->default('currency_category');
+            $table->string('post_type')->default('currency/category');
             $table->enum('status', ['public', 'hide', 'basket'])->default('public');
             $table->string('permalink');
-            $table->string('slug')->default('category');
+            $table->string('slug')->default('currency/category');
             $table->string('title');
             $table->string('thumbnail', 300);
             $table->string('short_desc', 500);
