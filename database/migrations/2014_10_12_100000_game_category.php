@@ -16,10 +16,10 @@ class GameCategory extends Migration
         Schema::create('game_category', function (Blueprint $table) {
             $table->bigIncrements('id');
             $table->integer('parent_id')->default(0);
-            $table->string('post_type')->default('game_category');
+            $table->string('post_type')->default('game/category');
             $table->enum('status', ['public', 'hide', 'basket'])->default('public');
             $table->string('permalink');
-            $table->string('slug')->default('category');
+            $table->string('slug')->default('game/category');
             $table->string('title');
             $table->string('thumbnail', 300);
             $table->string('short_desc', 500);
