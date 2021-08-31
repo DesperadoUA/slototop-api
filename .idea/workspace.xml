@@ -2,9 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="612891bd-e6d1-407d-8831-4c27fedf3233" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/Api/AdminGameCategoryController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/Api/AdminBonusCategoryController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/migrations/2014_10_12_100000_game_category.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2014_10_12_100000_game_category.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2014_10_12_100000_bonus_category.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2014_10_12_100000_bonus_category.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/routes/api.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/api.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -33,38 +33,26 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/routes/api.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="341">
-              <caret line="61" column="54" lean-forward="true" selection-start-line="61" selection-start-column="54" selection-end-line="61" selection-end-column="54" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Api/AdminGameCategoryController.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-1920">
-              <caret line="15" column="32" selection-start-line="15" selection-start-column="32" selection-end-line="15" selection-end-column="32" />
+            <state relative-caret-position="120">
+              <caret line="67" column="93" lean-forward="true" selection-start-line="67" selection-start-column="93" selection-end-line="67" selection-end-column="93" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/database/migrations/2014_10_12_100000_game_category.php">
+        <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Api/AdminBonusCategoryController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="170">
-              <caret line="21" column="58" selection-start-line="21" selection-start-column="58" selection-end-line="21" selection-end-column="58" />
+            <state relative-caret-position="221">
+              <caret line="15" column="33" selection-start-line="15" selection-start-column="33" selection-end-line="15" selection-end-column="33" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Api/AdminCasinoCategoryController.php">
+        <entry file="file://$PROJECT_DIR$/database/migrations/2014_10_12_100000_bonus_category.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="238">
-              <caret line="16" selection-start-line="16" selection-end-line="16" />
-              <folding>
-                <element signature="e#45#73#0#PHP" expanded="true" />
-              </folding>
+            <state relative-caret-position="-34">
+              <caret line="12" column="7" lean-forward="true" selection-start-line="12" selection-start-column="7" selection-end-line="12" selection-end-column="7" />
             </state>
           </provider>
         </entry>
@@ -156,9 +144,11 @@
         <option value="$PROJECT_DIR$/app/Http/Controllers/Api/AdminCasinoCategoryController.php" />
         <option value="$PROJECT_DIR$/app/Http/Controllers/Api/AdminPokerCategoryController.php" />
         <option value="$PROJECT_DIR$/database/migrations/2014_10_12_100000_poker_category.php" />
-        <option value="$PROJECT_DIR$/routes/api.php" />
         <option value="$PROJECT_DIR$/app/Http/Controllers/Api/AdminGameCategoryController.php" />
         <option value="$PROJECT_DIR$/database/migrations/2014_10_12_100000_game_category.php" />
+        <option value="$PROJECT_DIR$/routes/api.php" />
+        <option value="$PROJECT_DIR$/database/migrations/2014_10_12_100000_bonus_category.php" />
+        <option value="$PROJECT_DIR$/app/Http/Controllers/Api/AdminBonusCategoryController.php" />
       </list>
     </option>
   </component>
@@ -285,6 +275,21 @@
             <path>
               <item name="slototop-api" type="b2602c69:ProjectViewProjectNode" />
               <item name="slototop-api" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="Http" type="462c0819:PsiDirectoryNode" />
+              <item name="Controllers" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="slototop-api" type="b2602c69:ProjectViewProjectNode" />
+              <item name="slototop-api" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="Http" type="462c0819:PsiDirectoryNode" />
+              <item name="Controllers" type="462c0819:PsiDirectoryNode" />
+              <item name="Api" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="slototop-api" type="b2602c69:ProjectViewProjectNode" />
+              <item name="slototop-api" type="462c0819:PsiDirectoryNode" />
               <item name="database" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -351,12 +356,12 @@
       <workItem from="1630047718508" duration="15965000" />
       <workItem from="1630133383230" duration="19965000" />
       <workItem from="1630307683685" duration="127000" />
-      <workItem from="1630396139141" duration="437000" />
+      <workItem from="1630396139141" duration="2386000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="67339000" />
+    <option name="totallyTimeSpent" value="69288000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
@@ -377,7 +382,7 @@
       <window_info anchor="bottom" id="Version Control" order="8" />
       <window_info anchor="bottom" id="Database Changes" order="9" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
-      <window_info anchor="bottom" id="Terminal" order="11" visible="true" weight="0.32956153" />
+      <window_info anchor="bottom" id="Terminal" order="11" visible="true" weight="0.17397454" />
       <window_info anchor="bottom" id="GraphQL" order="12" />
       <window_info anchor="right" id="Commander" order="0" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -657,20 +662,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/routes/api.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="341">
-          <caret line="61" column="54" lean-forward="true" selection-start-line="61" selection-start-column="54" selection-end-line="61" selection-end-column="54" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Api/AdminGameCategoryController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1920">
-          <caret line="15" column="32" selection-start-line="15" selection-start-column="32" selection-end-line="15" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/database/migrations/2014_10_13_100001_game_category_relative.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="68">
@@ -680,8 +671,36 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/database/migrations/2014_10_12_100000_game_category.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="21" column="58" selection-start-line="21" selection-start-column="58" selection-end-line="21" selection-end-column="58" />
+        <state relative-caret-position="239">
+          <caret line="18" column="63" selection-start-line="18" selection-start-column="50" selection-end-line="18" selection-end-column="63" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Api/AdminGameCategoryController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="86">
+          <caret line="133" column="9" lean-forward="true" selection-start-line="133" selection-start-column="9" selection-end-line="133" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/database/migrations/2014_10_12_100000_bonus_category.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-34">
+          <caret line="12" column="7" lean-forward="true" selection-start-line="12" selection-start-column="7" selection-end-line="12" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/routes/api.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="67" column="93" lean-forward="true" selection-start-line="67" selection-start-column="93" selection-end-line="67" selection-end-column="93" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Api/AdminBonusCategoryController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="15" column="33" selection-start-line="15" selection-start-column="33" selection-end-line="15" selection-end-column="33" />
         </state>
       </provider>
     </entry>
