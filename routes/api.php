@@ -80,6 +80,13 @@ Route::namespace('Api')->group(function () {
     Route::post('admin/country/update', 'AdminCountryController@update')->middleware('api_auth');
     Route::post('admin/country/delete', 'AdminCountryController@delete')->middleware('api_auth');
     Route::post('admin/country/store', 'AdminCountryController@store')->middleware('api_auth');
+
+    Route::post('admin/country/category', 'AdminCountryCategoryController@index')->middleware('api_auth');
+    Route::post('admin/country/category/update', 'AdminCountryCategoryController@update')->middleware('api_auth');
+    Route::post('admin/country/category/delete', 'AdminCountryCategoryController@delete')->middleware('api_auth');
+    Route::post('admin/country/category/store', 'AdminCountryCategoryController@store')->middleware('api_auth');
+    Route::post('admin/country/category/{id}', 'AdminCountryCategoryController@show')->middleware('api_auth');
+
     Route::post('admin/country/{id}', 'AdminCountryController@show')->middleware('api_auth');
 
     Route::post('admin/currencies', 'AdminCurrencyController@index')->middleware('api_auth');
