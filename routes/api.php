@@ -119,6 +119,13 @@ Route::namespace('Api')->group(function () {
     Route::post('admin/license/update', 'AdminLicenseController@update')->middleware('api_auth');
     Route::post('admin/license/delete', 'AdminLicenseController@delete')->middleware('api_auth');
     Route::post('admin/license/store', 'AdminLicenseController@store')->middleware('api_auth');
+
+    Route::post('admin/license/category', 'AdminLicenseCategoryController@index')->middleware('api_auth');
+    Route::post('admin/license/category/update', 'AdminLicenseCategoryController@update')->middleware('api_auth');
+    Route::post('admin/license/category/delete', 'AdminLicenseCategoryController@delete')->middleware('api_auth');
+    Route::post('admin/license/category/store', 'AdminLicenseCategoryController@store')->middleware('api_auth');
+    Route::post('admin/license/category/{id}', 'AdminLicenseCategoryController@show')->middleware('api_auth');
+
     Route::post('admin/license/{id}', 'AdminLicenseController@show')->middleware('api_auth');
 
     Route::post('admin/technologies', 'AdminTechnologyController@index')->middleware('api_auth');
