@@ -132,6 +132,13 @@ Route::namespace('Api')->group(function () {
     Route::post('admin/technology/update', 'AdminTechnologyController@update')->middleware('api_auth');
     Route::post('admin/technology/delete', 'AdminTechnologyController@delete')->middleware('api_auth');
     Route::post('admin/technology/store', 'AdminTechnologyController@store')->middleware('api_auth');
+
+    Route::post('admin/technology/category', 'AdminTechnologyCategoryController@index')->middleware('api_auth');
+    Route::post('admin/technology/category/update', 'AdminTechnologyCategoryController@update')->middleware('api_auth');
+    Route::post('admin/technology/category/delete', 'AdminTechnologyCategoryController@delete')->middleware('api_auth');
+    Route::post('admin/technology/category/store', 'AdminTechnologyCategoryController@store')->middleware('api_auth');
+    Route::post('admin/technology/category/{id}', 'AdminTechnologyCategoryController@show')->middleware('api_auth');
+
     Route::post('admin/technology/{id}', 'AdminTechnologyController@show')->middleware('api_auth');
 
     Route::post('admin/type-payments', 'AdminTypePaymentController@index')->middleware('api_auth');
