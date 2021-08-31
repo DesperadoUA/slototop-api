@@ -16,10 +16,10 @@ class TypePaymentCategory extends Migration
         Schema::create('type_payment_category', function (Blueprint $table) {
             $table->bigIncrements('id');
             $table->integer('parent_id')->default(0);
-            $table->string('post_type')->default('type_payment_category');
+            $table->string('post_type')->default('type-payment/category');
             $table->enum('status', ['public', 'hide', 'basket'])->default('public');
             $table->string('permalink');
-            $table->string('slug')->default('category');
+            $table->string('slug')->default('type-payment/category');
             $table->string('title');
             $table->string('thumbnail', 300);
             $table->string('short_desc', 500);
