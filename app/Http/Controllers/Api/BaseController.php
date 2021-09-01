@@ -2,6 +2,7 @@
 namespace App\Http\Controllers\Api;
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
+use App\Models\Relative;
 use App\Validate;
 use App\Models\Posts;
 use Illuminate\Support\Facades\DB;
@@ -537,5 +538,50 @@ class BaseController extends Controller {
             }
         }
         return $newData;
+    }
+    protected static function relativeCategoryPost($id, $main_table, $category_table, $relative_table) {
+        $data = [];
+        $current_post = DB::table($main_table)->where('id', $id)->get();
+        if($current_post->isEmpty()) {
+            return $data;
+        }
+        else {
+            $arr_title_category = [];
+            $list_category = DB::table($category_table)->where('lang', $current_post[0]->lang)->get();
+            if(!$list_category->isEmpty()) {
+                foreach ($list_category as $item) $arr_title_category[] = $item->title;
+            }
+            $data['all_value'] = $arr_title_category;
+            $arr_relative_category_id = Relative::getRelativeByPostId($relative_table, $current_post[0]->id);
+            if(empty($arr_relative_category_id)) $data['current_value'] = [];
+            else {
+                $arr_category = DB::table($category_table)
+                                    ->whereIn('id', $arr_relative_category_id)
+                                    ->get();
+                $data['current_value'] = [];
+                foreach ($arr_category as $item) $data['current_value'][] = $item->title;
+            }
+            return $data;
+        }
+    }
+    public function updateCategory($id, $arr_titles, $main_table, $category_table, $relative_table) {
+        DB::table($relative_table)->where('post_id', $id)->delete();
+        if(!empty($arr_titles)) {
+            $current_post = DB::table($main_table)->where('id', $id)->get();
+            if(!$current_post->isEmpty()) {
+                $arr_category = DB::table($category_table)
+                    ->whereIn('title', $arr_titles)
+                    ->where('lang', $current_post[0]->lang)
+                    ->get();
+                $data = [];
+                foreach ($arr_category as $item) {
+                    $data[] = [
+                        'post_id' => $current_post[0]->id,
+                        'relative_id' => $item->id
+                    ];
+                }
+                Relative::insert($relative_table, $data);
+            }
+        }
     }
 }

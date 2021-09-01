@@ -12,6 +12,8 @@ class AdminCasinoController extends BaseController
     const POST_TYPE = 'casino';
     const MAIN_TABLE = 'casinos';
     const META_TABLE = 'casino_meta';
+    const CATEGORY_TABLE = 'casino_category';
+    const CATEGORY_RELATIVE = 'casino_category_relative';
 
     public function index(Request $request)
     {
@@ -67,6 +69,9 @@ class AdminCasinoController extends BaseController
         $data = $post->getPostById($id);
         if (!empty(count($data))) {
             $response['body'] = self::dataCommonDecode($data[0]) + self::dataMetaDecode($data[0]);
+            $response['body']['category'] = self::relativeCategoryPost($id, self::MAIN_TABLE,
+                                                                     self::CATEGORY_TABLE,
+                                                                      self::CATEGORY_RELATIVE);
             $response['confirm'] = 'ok';
         }
 
@@ -87,7 +92,9 @@ class AdminCasinoController extends BaseController
 
         $data_meta = self::dataValidateMetaSave($data_request);
         $post->updateMetaById($data_request['id'], $data_meta);
-        //self::updateCategory($data_request['id'], $data_request['category']);
+        self::updateCategory($data_request['id'], $data_request['category'], self::MAIN_TABLE,
+                                                                          self::CATEGORY_TABLE,
+                                                                           self::CATEGORY_RELATIVE);
 
         return response()->json($response);
     }
