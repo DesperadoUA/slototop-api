@@ -15,7 +15,7 @@ class AdminPageController extends Controller
     const OFFSET      = 0;
     const LIMIT       = 8;
     const ORDER_BY    = 'DESC';
-    const ORDER_KEY   = 'create_at';
+    const ORDER_KEY   = 'created_at';
     const LANG        = 1;
     const DEFAULT_SRC = '/img/default.jpg';
     /**
@@ -104,18 +104,18 @@ class AdminPageController extends Controller
             $newData['status'] = 'public';
         }
 
-        if(isset($data['create_at'])) {
-            $newData['create_at'] = $data['create_at'];
+        if(isset($data['created_at'])) {
+            $newData['created_at'] = $data['created_at'];
         }
         else {
-            $newData['create_at'] = date('Y-m-d');
+            $newData['created_at'] = date('Y-m-d');
         }
 
-        if(isset($data['update_at'])) {
-            $newData['update_at'] = $data['update_at'];
+        if(isset($data['updated_at'])) {
+            $newData['updated_at'] = $data['updated_at'];
         }
         else {
-            $newData['update_at'] = date('Y-m-d');
+            $newData['updated_at'] = date('Y-m-d');
         }
 
         if(isset($data['content'])) {
@@ -175,8 +175,8 @@ class AdminPageController extends Controller
         $newData['id']          = $data->id;
         $newData['title']       = htmlspecialchars_decode($data->title);
         $newData['status']      = $data->status;
-        $newData['create_at']   = $data->create_at;
-        $newData['update_at']   = $data->update_at;
+        $newData['created_at']   = $data->created_at;
+        $newData['updated_at']   = $data->updated_at;
         $newData['slug']        = $data->slug;
         $newData['content']     = htmlspecialchars_decode($data->content);
         $newData['description'] = htmlspecialchars_decode($data->description);
