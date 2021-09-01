@@ -12,6 +12,8 @@ class AdminGameController extends BaseController
     const POST_TYPE = 'game';
     const MAIN_TABLE = 'games';
     const META_TABLE = 'game_meta';
+    const CATEGORY_TABLE = 'game_category';
+    const CATEGORY_RELATIVE = 'game_category_relative';
 
     public function index(Request $request)
     {
@@ -67,6 +69,9 @@ class AdminGameController extends BaseController
         $data = $post->getPostById($id);
         if (!empty(count($data))) {
             $response['body'] = self::dataCommonDecode($data[0]) + self::dataMetaDecode($data[0]);
+            $response['body']['category'] = self::relativeCategoryPost($id, self::MAIN_TABLE,
+                                                                         self::CATEGORY_TABLE,
+                                                                          self::CATEGORY_RELATIVE);
             $response['confirm'] = 'ok';
         }
 
@@ -87,7 +92,9 @@ class AdminGameController extends BaseController
 
         $data_meta = self::dataValidateMetaSave($data_request);
         $post->updateMetaById($data_request['id'], $data_meta);
-        //self::updateCategory($data_request['id'], $data_request['category']);
+        self::updateCategory($data_request['id'], $data_request['category'], self::MAIN_TABLE,
+                                                                          self::CATEGORY_TABLE,
+                                                                           self::CATEGORY_RELATIVE);
 
         return response()->json($response);
     }
