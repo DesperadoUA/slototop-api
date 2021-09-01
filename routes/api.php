@@ -24,6 +24,14 @@ Route::namespace('Api')->group(function () {
     Route::post('admin/media', 'AdminUploadsController@media')->middleware('api_auth');
     Route::post('admin/delete-media', 'AdminUploadsController@delete')->middleware('api_auth');
 
+    Route::post('admin/options', 'AdminOptionsController@index')->middleware('api_auth');
+    Route::post('admin/options/update', 'AdminOptionsController@update')->middleware('api_auth');
+    Route::post('admin/options/{id}', 'AdminOptionsController@show')->middleware('api_auth');
+
+    Route::post('admin/settings', 'AdminSettingsController@index')->middleware('api_auth');
+    Route::post('admin/settings/update', 'AdminSettingsController@update')->middleware('api_auth');
+    Route::post('admin/settings/{id}', 'AdminSettingsController@show')->middleware('api_auth');
+
     Route::post('admin/casinos', 'AdminCasinoController@index')->middleware('api_auth');
     Route::post('admin/casino/update', 'AdminCasinoController@update')->middleware('api_auth');
     Route::post('admin/casino/delete', 'AdminCasinoController@delete')->middleware('api_auth');
