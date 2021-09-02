@@ -3,7 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="612891bd-e6d1-407d-8831-4c27fedf3233" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Api/AdminBonusController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Api/AdminBonusController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Api/AdminLanguageController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Api/AdminLanguageController.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -38,15 +38,24 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Api/AdminBonusController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="276">
-              <caret line="96" column="75" lean-forward="true" selection-start-line="96" selection-start-column="75" selection-end-line="96" selection-end-column="75" />
+            <state relative-caret-position="221">
+              <caret line="15" column="56" lean-forward="true" selection-start-line="14" selection-start-column="4" selection-end-line="15" selection-end-column="56" />
               <folding>
                 <element signature="e#274#1440#0#PHP" />
                 <element signature="e#1446#2022#0#PHP" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Api/AdminLanguageController.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="221">
+              <caret line="15" column="39" selection-start-line="15" selection-start-column="39" selection-end-line="15" selection-end-column="39" />
             </state>
           </provider>
         </entry>
@@ -76,7 +85,6 @@
         <option value="$PROJECT_DIR$/app/Http/Controllers/Api/AdminSearchController.php" />
         <option value="$PROJECT_DIR$/app/CardBuilder.php" />
         <option value="$PROJECT_DIR$/app/Models/Posts.php" />
-        <option value="$PROJECT_DIR$/app/Http/Controllers/Api/AdminLanguageController.php" />
         <option value="$PROJECT_DIR$/app/Http/Controllers/Api/AdminLicenseController.php" />
         <option value="$PROJECT_DIR$/app/Http/Controllers/Api/AdminTechnologyController.php" />
         <option value="$PROJECT_DIR$/database/migrations/2014_10_12_100000_typepayments.php" />
@@ -119,6 +127,7 @@
         <option value="$PROJECT_DIR$/app/Http/Controllers/Api/AdminCountryController.php" />
         <option value="$PROJECT_DIR$/app/Http/Controllers/Api/AdminCurrencyController.php" />
         <option value="$PROJECT_DIR$/app/Http/Controllers/Api/AdminBonusController.php" />
+        <option value="$PROJECT_DIR$/app/Http/Controllers/Api/AdminLanguageController.php" />
       </list>
     </option>
   </component>
@@ -328,12 +337,12 @@
       <workItem from="1630307683685" duration="127000" />
       <workItem from="1630396139141" duration="14474000" />
       <workItem from="1630479337074" duration="15161000" />
-      <workItem from="1630564982089" duration="3644000" />
+      <workItem from="1630564982089" duration="4653000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="100181000" />
+    <option name="totallyTimeSpent" value="101190000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
@@ -398,13 +407,6 @@
           <folding>
             <element signature="e#21#42#0#PHP" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Api/AdminLanguageController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="77" column="21" lean-forward="true" selection-start-line="77" selection-start-column="21" selection-end-line="77" selection-end-column="21" />
         </state>
       </provider>
     </entry>
@@ -844,12 +846,19 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Api/AdminBonusController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="276">
-          <caret line="96" column="75" lean-forward="true" selection-start-line="96" selection-start-column="75" selection-end-line="96" selection-end-column="75" />
+        <state relative-caret-position="221">
+          <caret line="15" column="56" lean-forward="true" selection-start-line="14" selection-start-column="4" selection-end-line="15" selection-end-column="56" />
           <folding>
             <element signature="e#274#1440#0#PHP" />
             <element signature="e#1446#2022#0#PHP" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Api/AdminLanguageController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="15" column="39" selection-start-line="15" selection-start-column="39" selection-end-line="15" selection-end-column="39" />
         </state>
       </provider>
     </entry>
