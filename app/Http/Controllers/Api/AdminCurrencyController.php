@@ -12,6 +12,8 @@ class AdminCurrencyController extends BaseController
     const POST_TYPE = 'currency';
     const MAIN_TABLE = 'currencies';
     const META_TABLE = 'currency_meta';
+    const CATEGORY_TABLE = 'currency_category';
+    const CATEGORY_RELATIVE = 'currency_category_relative';
 
     public function index(Request $request)
     {
@@ -67,6 +69,9 @@ class AdminCurrencyController extends BaseController
         $data = $post->getPostById($id);
         if (!empty(count($data))) {
             $response['body'] = self::dataCommonDecode($data[0]) + self::dataMetaDecode($data[0]);
+            $response['body']['category'] = self::relativeCategoryPost($id, self::MAIN_TABLE,
+                                                                          self::CATEGORY_TABLE,
+                                                                           self::CATEGORY_RELATIVE);
             $response['confirm'] = 'ok';
         }
 
@@ -87,7 +92,9 @@ class AdminCurrencyController extends BaseController
 
         $data_meta = self::dataValidateMetaSave($data_request);
         $post->updateMetaById($data_request['id'], $data_meta);
-        //self::updateCategory($data_request['id'], $data_request['category']);
+        self::updateCategory($data_request['id'], $data_request['category'], self::MAIN_TABLE,
+                                                                          self::CATEGORY_TABLE,
+                                                                           self::CATEGORY_RELATIVE);
 
         return response()->json($response);
     }
