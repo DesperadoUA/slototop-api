@@ -12,6 +12,8 @@ class AdminLicenseController extends BaseController
     const POST_TYPE = 'license';
     const MAIN_TABLE = 'licenses';
     const META_TABLE = 'license_meta';
+    const CATEGORY_TABLE = 'license_category';
+    const CATEGORY_RELATIVE = 'license_category_relative';
 
     public function index(Request $request)
     {
@@ -67,6 +69,9 @@ class AdminLicenseController extends BaseController
         $data = $post->getPostById($id);
         if (!empty(count($data))) {
             $response['body'] = self::dataCommonDecode($data[0]) + self::dataMetaDecode($data[0]);
+            $response['body']['category'] = self::relativeCategoryPost($id, self::MAIN_TABLE,
+                                                                         self::CATEGORY_TABLE,
+                                                                          self::CATEGORY_RELATIVE);
             $response['confirm'] = 'ok';
         }
 
@@ -87,7 +92,9 @@ class AdminLicenseController extends BaseController
 
         $data_meta = self::dataValidateMetaSave($data_request);
         $post->updateMetaById($data_request['id'], $data_meta);
-        //self::updateCategory($data_request['id'], $data_request['category']);
+        self::updateCategory($data_request['id'], $data_request['category'], self::MAIN_TABLE,
+                                                                          self::CATEGORY_TABLE,
+                                                                           self::CATEGORY_RELATIVE);
 
         return response()->json($response);
     }
