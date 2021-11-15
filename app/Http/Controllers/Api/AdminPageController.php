@@ -178,7 +178,7 @@ class AdminPageController extends Controller
         $newData['created_at']   = $data->created_at;
         $newData['updated_at']   = $data->updated_at;
         $newData['slug']        = $data->slug;
-        $newData['content']     = htmlspecialchars_decode($data->content);
+        $newData['content']     = $data->content;
         $newData['description'] = htmlspecialchars_decode($data->description);
         $newData['h1']          = htmlspecialchars_decode($data->h1);
         $newData['keywords']    = htmlspecialchars_decode($data->keywords);

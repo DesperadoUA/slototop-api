@@ -18,6 +18,7 @@ class PaymentMeta extends Migration
             $table->string('site');
             $table->string('withdrawal');
             $table->string('commission');
+            $table->string('withdrawal_period');
             $table->unique('post_id');
             $table->foreign('post_id')
                 ->references('id')

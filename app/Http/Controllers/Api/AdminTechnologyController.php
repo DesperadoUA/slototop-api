@@ -6,6 +6,7 @@ namespace App\Http\Controllers\Api;
 use Illuminate\Http\Request;
 use App\Models\Posts;
 use App\Validate;
+use App\Models\Cash;
 
 class AdminTechnologyController extends BaseController
 {
@@ -96,6 +97,7 @@ class AdminTechnologyController extends BaseController
                                                                           self::CATEGORY_TABLE,
                                                                            self::CATEGORY_RELATIVE);
 
+        Cash::deleteAll();
         return response()->json($response);
     }
 

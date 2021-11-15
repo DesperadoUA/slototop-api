@@ -28,6 +28,7 @@ class CasinoCategory extends Migration
             $table->string('description');
             $table->string('keywords');
             $table->longText('content');
+            $table->longText('faq');
             $table->integer('lang')->default(1);
             $table->timestamp('created_at')->useCurrent();
             $table->timestamp('updated_at')->useCurrent();

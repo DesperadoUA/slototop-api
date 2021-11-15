@@ -6,6 +6,7 @@ namespace App\Http\Controllers\Api;
 use Illuminate\Http\Request;
 use App\Models\Posts;
 use App\Validate;
+use App\Models\Cash;
 
 class AdminBonusController extends BaseController
 {
@@ -14,6 +15,12 @@ class AdminBonusController extends BaseController
     const META_TABLE = 'bonus_meta';
     const CATEGORY_TABLE = 'bonus_category';
     const CATEGORY_RELATIVE = 'bonus_category_relative';
+    const TYPE_BONUS_TABLE = 'type_bonuses';
+    const BONUS_TYPE_BONUS_RELATIVE = 'bonus_type_bonus_relative';
+    const COUNTRY_TABLE = 'countries';
+    const BONUS_COUNTRY_RELATIVE = 'bonus_country_relative';
+    const BONUS_CASINO_RELATIVE = 'bonus_casino_relative';
+    const CASINO_TABLE = 'casinos';
 
     public function index(Request $request)
     {
@@ -72,6 +79,15 @@ class AdminBonusController extends BaseController
             $response['body']['category'] = self::relativeCategoryPost($id, self::MAIN_TABLE,
                                                                          self::CATEGORY_TABLE,
                                                                           self::CATEGORY_RELATIVE);
+            $response['body']['bonus_type_bonus'] = self::relativePostPost($id, self::MAIN_TABLE,
+                                                                                self::TYPE_BONUS_TABLE,
+                                                                            self::BONUS_TYPE_BONUS_RELATIVE);
+            $response['body']['bonus_country'] = self::relativePostPost($id, self::MAIN_TABLE,
+                                                                                self::COUNTRY_TABLE,
+                                                                                self::BONUS_COUNTRY_RELATIVE);
+            $response['body']['bonus_casino'] = self::relativePostPost($id, self::MAIN_TABLE,
+                                                                            self::CASINO_TABLE,
+                                                                        self::BONUS_CASINO_RELATIVE);
             $response['confirm'] = 'ok';
         }
 
@@ -95,7 +111,17 @@ class AdminBonusController extends BaseController
         self::updateCategory($data_request['id'], $data_request['category'], self::MAIN_TABLE,
                                                                           self::CATEGORY_TABLE,
                                                                            self::CATEGORY_RELATIVE);
+        self::updatePostPost($data_request['id'], $data_request['bonus_type_bonus'], self::MAIN_TABLE,
+                                                                                      self::TYPE_BONUS_TABLE,
+                                                                                  self::BONUS_TYPE_BONUS_RELATIVE);
+        self::updatePostPost($data_request['id'], $data_request['bonus_country'], self::MAIN_TABLE,
+                                                                                  self::COUNTRY_TABLE,
+                                                                              self::BONUS_COUNTRY_RELATIVE);
+        self::updatePostPost($data_request['id'], $data_request['bonus_casino'], self::MAIN_TABLE,
+                                                                                 self::CASINO_TABLE,
+                                                                             self::BONUS_CASINO_RELATIVE);
 
+        Cash::deleteAll();
         return response()->json($response);
     }
 

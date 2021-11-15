@@ -6,6 +6,7 @@ namespace App\Http\Controllers\Api;
 use Illuminate\Http\Request;
 use App\Models\Posts;
 use App\Validate;
+use App\Models\Cash;
 
 class AdminPokerController extends BaseController
 {
@@ -14,6 +15,20 @@ class AdminPokerController extends BaseController
     const META_TABLE = 'poker_meta';
     const CATEGORY_TABLE = 'poker_category';
     const CATEGORY_RELATIVE = 'poker_category_relative';
+    const LICENSE_TABLE = 'licenses';
+    const COUNTRY_TABLE = 'countries';
+    const POKER_LICENSE_RELATIVE = 'poker_license_relative';
+    const LANG_TABLE = 'languages';
+    const POKER_LANG_RELATIVE = 'poker_language_relative';
+    const POKER_COUNTRY_RELATIVE = 'poker_country_relative';
+    const CURRENCIES_TABLE = 'currencies';
+    const TYPE_PAYMENT_TABLE = 'type_payments';
+    const POKER_CURRENCIES_RELATIVE = 'poker_currency_relative';
+    const POKER_TYPE_PAYMENT_RELATIVE = 'poker_type_payment_relative';
+    const TECHNOLOGIES_TABLE = 'technologies';
+    const POKER_TECHNOLOGY_RELATIVE = 'poker_technology_relative';
+    const PAYMENT_TABLE = 'payments';
+    const POKER_PAYMENT_RELATIVE = 'poker_payment_relative';
 
     public function index(Request $request)
     {
@@ -72,6 +87,27 @@ class AdminPokerController extends BaseController
             $response['body']['category'] = self::relativeCategoryPost($id, self::MAIN_TABLE,
                                                                          self::CATEGORY_TABLE,
                                                                           self::CATEGORY_RELATIVE);
+            $response['body']['poker_license'] = self::relativePostPost($id, self::MAIN_TABLE,
+                self::LICENSE_TABLE,
+                self::POKER_LICENSE_RELATIVE);
+            $response['body']['poker_lang'] = self::relativePostPost($id, self::MAIN_TABLE,
+                                                                          self::LANG_TABLE,
+                                                                      self::POKER_LANG_RELATIVE);
+            $response['body']['poker_country'] = self::relativePostPost($id, self::MAIN_TABLE,
+                                                                             self::COUNTRY_TABLE,
+                                                                         self::POKER_COUNTRY_RELATIVE);
+            $response['body']['poker_currencies'] = self::relativePostPost($id, self::MAIN_TABLE,
+                                                                                self::CURRENCIES_TABLE,
+                                                                            self::POKER_CURRENCIES_RELATIVE);
+            $response['body']['poker_type_payment'] = self::relativePostPost($id, self::MAIN_TABLE,
+                self::TYPE_PAYMENT_TABLE,
+                self::POKER_TYPE_PAYMENT_RELATIVE);
+            $response['body']['poker_technology'] = self::relativePostPost($id, self::MAIN_TABLE,
+                self::TECHNOLOGIES_TABLE,
+                self::POKER_TECHNOLOGY_RELATIVE);
+            $response['body']['poker_payment'] = self::relativePostPost($id, self::MAIN_TABLE,
+                self::PAYMENT_TABLE,
+                self::POKER_PAYMENT_RELATIVE);
             $response['confirm'] = 'ok';
         }
 
@@ -95,7 +131,28 @@ class AdminPokerController extends BaseController
         self::updateCategory($data_request['id'], $data_request['category'], self::MAIN_TABLE,
                                                                           self::CATEGORY_TABLE,
                                                                            self::CATEGORY_RELATIVE);
-
+        self::updatePostPost($data_request['id'], $data_request['poker_license'], self::MAIN_TABLE,
+                                                                                     self::LICENSE_TABLE,
+                                                                                 self::POKER_LICENSE_RELATIVE);
+        self::updatePostPost($data_request['id'], $data_request['poker_lang'], self::MAIN_TABLE,
+                                                                                  self::LANG_TABLE,
+                                                                              self::POKER_LANG_RELATIVE);
+        self::updatePostPost($data_request['id'], $data_request['poker_country'], self::MAIN_TABLE,
+                                                                               self::COUNTRY_TABLE,
+                                                                           self::POKER_COUNTRY_RELATIVE);
+        self::updatePostPost($data_request['id'], $data_request['poker_currencies'], self::MAIN_TABLE,
+                                                                                     self::CURRENCIES_TABLE,
+                                                                                 self::POKER_CURRENCIES_RELATIVE);
+        self::updatePostPost($data_request['id'], $data_request['poker_type_payment'], self::MAIN_TABLE,
+            self::TYPE_PAYMENT_TABLE,
+            self::POKER_TYPE_PAYMENT_RELATIVE);
+        self::updatePostPost($data_request['id'], $data_request['poker_technology'], self::MAIN_TABLE,
+                                                                                     self::TECHNOLOGIES_TABLE,
+                                                                                 self::POKER_TECHNOLOGY_RELATIVE);
+        self::updatePostPost($data_request['id'], $data_request['poker_payment'], self::MAIN_TABLE,
+            self::PAYMENT_TABLE,
+            self::POKER_PAYMENT_RELATIVE);
+        Cash::deleteAll();
         return response()->json($response);
     }
 

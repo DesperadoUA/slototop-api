@@ -6,12 +6,15 @@ namespace App\Http\Controllers\Api;
 use Illuminate\Http\Request;
 use App\Models\Posts;
 use App\Validate;
+use App\Models\Cash;
 
 class AdminTypePaymentController extends BaseController
 {
     const POST_TYPE = 'type-payment';
     const MAIN_TABLE = 'type_payments';
     const META_TABLE = 'type_payment_meta';
+    const CATEGORY_TABLE = 'type_payment_category';
+    const CATEGORY_RELATIVE = 'type_payment_category_relative';
 
     public function index(Request $request)
     {
@@ -67,6 +70,9 @@ class AdminTypePaymentController extends BaseController
         $data = $post->getPostById($id);
         if (!empty(count($data))) {
             $response['body'] = self::dataCommonDecode($data[0]) + self::dataMetaDecode($data[0]);
+            $response['body']['category'] = self::relativeCategoryPost($id, self::MAIN_TABLE,
+                                                                         self::CATEGORY_TABLE,
+                                                                          self::CATEGORY_RELATIVE);
             $response['confirm'] = 'ok';
         }
 
@@ -87,8 +93,10 @@ class AdminTypePaymentController extends BaseController
 
         $data_meta = self::dataValidateMetaSave($data_request);
         $post->updateMetaById($data_request['id'], $data_meta);
-        //self::updateCategory($data_request['id'], $data_request['category']);
-
+        self::updateCategory($data_request['id'], $data_request['category'], self::MAIN_TABLE,
+                                                                           self::CATEGORY_TABLE,
+                                                                            self::CATEGORY_RELATIVE);
+        Cash::deleteAll();
         return response()->json($response);
     }
 

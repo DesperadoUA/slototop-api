@@ -14,6 +14,10 @@ use Illuminate\Support\Facades\DB;
  * Time: 11:40
  */
 class BaseController extends Controller {
+    protected $tables;
+    public function __construct() {
+        $this->tables = config('tables');
+    }
     const DEFAULT_POST_TYPE = 'default';
     const ARR_LANG = ['ru' => 1, 'ua' => 2];
     const SLUG = 'default';
@@ -77,7 +81,7 @@ class BaseController extends Controller {
         }
 
         if(isset($data['content'])) {
-            $newData['content'] = Validate::textValidate($data['content']);
+            $newData['content'] = $data['content'];
         }
         else {
             $newData['content'] = '';
@@ -378,6 +382,12 @@ class BaseController extends Controller {
         else {
             $newData['permalink'] = self::permalinkCategoryUpdate($id, $data['title'], $main_table);
         }
+        if(isset($data['faq'])) {
+            $newData['faq'] = json_encode($data['faq']);
+        }
+        else {
+            $newData['faq'] = json_encode([]);
+        }
 
         return $newData;
     }
@@ -475,7 +485,12 @@ class BaseController extends Controller {
         else {
             $newData['permalink'] = self::categoryPermalinkInsert($data['title'], $main_table);
         }
-
+        if(isset($data['faq'])) {
+            $newData['faq'] = json_encode($data['faq']);
+        }
+        else {
+            $newData['faq'] = json_encode([]);
+        }
         return $newData;
     }
     protected static function permalinkUpdate($id, $permalink, $main_table, $meta_table) {
@@ -564,6 +579,31 @@ class BaseController extends Controller {
             return $data;
         }
     }
+    protected static function relativePostPost($id, $table_1, $table_2, $relative_table) {
+        $data = [];
+        $current_post = DB::table($table_1)->where('id', $id)->get();
+        if($current_post->isEmpty()) {
+            return $data;
+        }
+        else {
+            $arr_title_relative = [];
+            $list_relative = DB::table($table_2)->where('lang', $current_post[0]->lang)->get();
+            if(!$list_relative->isEmpty()) {
+                foreach ($list_relative as $item) $arr_title_relative[] = $item->title;
+            }
+            $data['all_value'] = $arr_title_relative;
+            $arr_relative_post_id = Relative::getRelativeByPostId($relative_table, $current_post[0]->id);
+            if(empty($arr_relative_post_id)) $data['current_value'] = [];
+            else {
+                $arr_category = DB::table($table_2)
+                    ->whereIn('id', $arr_relative_post_id)
+                    ->get();
+                $data['current_value'] = [];
+                foreach ($arr_category as $item) $data['current_value'][] = $item->title;
+            }
+            return $data;
+        }
+    }
     public function updateCategory($id, $arr_titles, $main_table, $category_table, $relative_table) {
         DB::table($relative_table)->where('post_id', $id)->delete();
         if(!empty($arr_titles)) {
@@ -575,6 +615,26 @@ class BaseController extends Controller {
                     ->get();
                 $data = [];
                 foreach ($arr_category as $item) {
+                    $data[] = [
+                        'post_id' => $current_post[0]->id,
+                        'relative_id' => $item->id
+                    ];
+                }
+                Relative::insert($relative_table, $data);
+            }
+        }
+    }
+    public function updatePostPost($id, $arr_titles, $table_1, $table_2, $relative_table) {
+        DB::table($relative_table)->where('post_id', $id)->delete();
+        if(!empty($arr_titles)) {
+            $current_post = DB::table($table_1)->where('id', $id)->get();
+            if(!$current_post->isEmpty()) {
+                $arr_relative_posts = DB::table($table_2)
+                    ->whereIn('title', $arr_titles)
+                    ->where('lang', $current_post[0]->lang)
+                    ->get();
+                $data = [];
+                foreach ($arr_relative_posts as $item) {
                     $data[] = [
                         'post_id' => $current_post[0]->id,
                         'relative_id' => $item->id

@@ -15,10 +15,10 @@ class Pages extends Model
     const OFFSET    = 0;
     const TABLE     = 'pages';
     const ORDER_BY  = 'DESC';
-    const ORDER_KEY = 'create_at';
+    const ORDER_KEY = 'created_at';
     const LANG      = 1;
 
-    public function getPublicPosts($settings = []) {
+    public function _getPublicPosts($settings = []) {
         $limit     = isset($settings['limit']) ? $settings['limit'] : self::LIMIT;
         $offset    = isset($settings['offset']) ? $settings['offset'] : self::OFFSET;
         $order_by  = isset($settings['order_by']) ? $settings['order_by'] : self::ORDER_BY;
@@ -66,7 +66,7 @@ class Pages extends Model
             ->get();
         return $posts;
     }
-    public function getAll(){
+    public function _getAll(){
         $posts = DB::table(self::TABLE)
             ->select( '*')
             ->get();

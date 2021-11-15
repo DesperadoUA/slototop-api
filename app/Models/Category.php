@@ -26,34 +26,20 @@ class Category extends Model
     const ORDER_KEY = 'create_at';
     const LANG = 1;
 
-    public function _getPublicPosts($settings = []) {
-        $limit     = isset($settings['limit']) ? $settings['limit'] : self::LIMIT;
-        $offset    = isset($settings['offset']) ? $settings['offset'] : self::OFFSET;
-        $order_by  = isset($settings['order_by']) ? $settings['order_by'] : self::ORDER_BY;
-        $order_key = isset($settings['order_key']) ? $settings['order_key'] : self::ORDER_KEY;
-        $lang      = isset($settings['lang']) ? $settings['lang'] : self::LANG;
-        $parent_id = isset($settings['parent_id']) ? $settings['parent_id'] : self::PARENT_ID;
-
-        $posts = DB::table(self::TABLE)
-            ->where('status',  'public')
-            ->where('lang', $lang)
-            ->where('parent_id', $parent_id)
+    public function getPublicPosts($settings = []) {
+        $posts = DB::table($this->table_category)
+            ->where('status','public')
             ->select( '*')
-            ->offset($offset)
-            ->limit($limit)
-            ->orderBy($order_key, $order_by)
             ->get();
         return $posts;
     }
-    public function _getPublicPostByUrl($url) {
-        /*
-        $post = DB::table(self::TABLE)
+    public function getPublicPostByUrl($url) {
+        $post = DB::table($this->table_category)
             ->where('permalink', $url)
             ->where('status','public')
             ->select( '*')
             ->get();
         return $post;
-        */
     }
     public function getPosts($settings = []) {
         $limit     = isset($settings['limit']) ? $settings['limit'] : self::LIMIT;

@@ -6,6 +6,7 @@ namespace App\Http\Controllers\Api;
 use Illuminate\Http\Request;
 use App\Models\Category;
 use Illuminate\Support\Facades\DB;
+use App\Models\Cash;
 
 class AdminPaymentCategoryController extends BaseController
 {
@@ -102,7 +103,7 @@ class AdminPaymentCategoryController extends BaseController
             ]
         );
         $category->updateById($data_request['id'], $data_save);
-
+        Cash::deleteAll();
         return response()->json($response);
     }
     public function delete(Request $request) {
@@ -118,6 +119,9 @@ class AdminPaymentCategoryController extends BaseController
     protected static function dataCommonDecode($data) {
         $newData =  parent::dataCommonDecode($data);
         $newData['parent_id'] = $data->parent_id;
+        $newData['faq'] = empty(json_decode($data->faq, true))
+            ? []
+            : json_decode($data->faq, true);
         return $newData;
     }
     protected static function relativeCategory($id) {

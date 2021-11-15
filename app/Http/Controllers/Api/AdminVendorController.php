@@ -6,14 +6,17 @@ namespace App\Http\Controllers\Api;
 use Illuminate\Http\Request;
 use App\Models\Posts;
 use App\Validate;
+use App\Models\Cash;
 
 class AdminVendorController extends BaseController
 {
     const POST_TYPE = 'vendor';
     const MAIN_TABLE = 'vendors';
+    const COUNTRY_TABLE = 'countries';
     const META_TABLE = 'vendor_meta';
     const CATEGORY_TABLE = 'vendor_category';
     const CATEGORY_RELATIVE = 'vendor_category_relative';
+    const VENDOR_COUNTRY_RELATIVE = 'vendor_country_relative';
 
     public function index(Request $request)
     {
@@ -72,6 +75,9 @@ class AdminVendorController extends BaseController
             $response['body']['category'] = self::relativeCategoryPost($id, self::MAIN_TABLE,
                                                                          self::CATEGORY_TABLE,
                                                                           self::CATEGORY_RELATIVE);
+            $response['body']['vendor_country'] = self::relativeCategoryPost($id, self::MAIN_TABLE,
+                                                                               self::COUNTRY_TABLE,
+                                                                                self::VENDOR_COUNTRY_RELATIVE);
             $response['confirm'] = 'ok';
         }
 
@@ -95,7 +101,11 @@ class AdminVendorController extends BaseController
         self::updateCategory($data_request['id'], $data_request['category'], self::MAIN_TABLE,
                                                                           self::CATEGORY_TABLE,
                                                                            self::CATEGORY_RELATIVE);
+        self::updatePostPost($data_request['id'], $data_request['vendor_country'], self::MAIN_TABLE,
+                                                                                   self::COUNTRY_TABLE,
+                                                                               self::VENDOR_COUNTRY_RELATIVE);
 
+        Cash::deleteAll();
         return response()->json($response);
     }
 

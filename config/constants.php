@@ -5,34 +5,32 @@ return [
         '1' => 'ru',
         '2' => 'ua'
     ],
-    'CATEGORY' => [
-        'CASINO' => 'casino',
-        'SLOTS'  => 'slots',
-        'POPULAR_CASINO' => 'popular-casino',
-        'LICENSED_CASINO' => 'licensed-casino',
-        'MIN_DEPOSIT_CASINO' => 'min-deposit-casino',
-        'MAX_PAY_OUT_CASINO' => 'max-payout-casino',
-        'FREE_BONUS_CASINO' => 'free-bonus-casino',
-        'ROULETTE' => 'roulette',
-        'GAMES' => 'games',
-        'BLACKJACK' => 'blackjack',
-        'BACCARAT' => 'baccarat',
-        'NEW_SLOTS' => 'new-slots',
-        'BEST_FOR_PAYOUT' => 'best-for-payout',
-        'BONUS_PAY' => 'bonus-pay',
-        'PROGRESSIVE' => 'progressive',
-        'MEGAWAYS' => 'megaways'
+    'CATEGORY_GAMES' => [
+        'VIDEOPOKER' => 'videopoker',
+        'SLOTS' => 'slots',
+        'KARTOCHNYE_IGRY' => 'kartochnye-igry',
+        'NOVYE_IGROVYE_AVTOMATY' => 'novye-igrovye-avtomaty',
+        'LOTEREI' => 'loterei',
+        'RULETKI' => 'ruletki'
     ],
     'PAGES' => [
         'MAIN' => 'main',
-        'REVIEWS' => 'reviews',
+        'CASINOS' => 'casinos',
         'BONUSES' => 'bonuses',
-        'BLOG' => 'blog',
-        'NEWS' => 'news',
-        'INTERVIEW' => 'interview',
-        'USEFUL' => 'useful',
+        'GAMES' => 'games',
+        'VENDORS' => 'vendors',
+        'PAYMENTS' => 'payments',
+        'POKERS' => 'pokers',
+        'COUNTRIES' => 'countries',
+        'CURRENCIES' => 'currencies',
+        'LANGUAGES' => 'languages',
+        'LICENSES' => 'licenses',
+        'TYPE_PAYMENTS' => 'type-payments',
+        'TYPE_PAYMENTS' => 'type-payments',
+        'TECHNOLOGIES' => 'technologies',
+        'TYPE_BONUSES' => 'type-bonuses',
         'SEARCH' => 'search',
         'SITE_MAP' => 'sitemap'
     ],
-    'SINGLE_CASINO_GAMES' => ["Blackjack", "Baccarat", "Roulette", "Live Casino", "Slots", "Poker"]
+
 ];

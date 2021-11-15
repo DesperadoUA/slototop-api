@@ -6,6 +6,7 @@ namespace App\Http\Controllers\Api;
 use Illuminate\Http\Request;
 use App\Models\Posts;
 use App\Validate;
+use App\Models\Cash;
 
 class AdminGameController extends BaseController
 {
@@ -14,6 +15,8 @@ class AdminGameController extends BaseController
     const META_TABLE = 'game_meta';
     const CATEGORY_TABLE = 'game_category';
     const CATEGORY_RELATIVE = 'game_category_relative';
+    const VENDOR_TABLE = 'vendors';
+    const GAME_VENDOR_RELATIVE = 'game_vendor_relative';
 
     public function index(Request $request)
     {
@@ -72,6 +75,9 @@ class AdminGameController extends BaseController
             $response['body']['category'] = self::relativeCategoryPost($id, self::MAIN_TABLE,
                                                                          self::CATEGORY_TABLE,
                                                                           self::CATEGORY_RELATIVE);
+            $response['body']['game_vendor'] = self::relativePostPost($id, self::MAIN_TABLE,
+                                       self::VENDOR_TABLE,
+                                   self::GAME_VENDOR_RELATIVE);
             $response['confirm'] = 'ok';
         }
 
@@ -95,7 +101,11 @@ class AdminGameController extends BaseController
         self::updateCategory($data_request['id'], $data_request['category'], self::MAIN_TABLE,
                                                                           self::CATEGORY_TABLE,
                                                                            self::CATEGORY_RELATIVE);
+        self::updatePostPost($data_request['id'], $data_request['game_vendor'], self::MAIN_TABLE,
+                                                                                self::VENDOR_TABLE,
+                                                                            self::GAME_VENDOR_RELATIVE);
 
+        Cash::deleteAll();
         return response()->json($response);
     }
 
@@ -173,6 +183,11 @@ class AdminGameController extends BaseController
         else {
             $newData['details'] = json_encode([]);
         }
+        if (isset($data['rating'])) {
+            $newData['rating'] = (int)$data['rating'];
+        } else {
+            $newData['rating'] = 0;
+        }
 
         return $newData;
     }
@@ -190,6 +205,7 @@ class AdminGameController extends BaseController
         $newData['iframe'] = $data->iframe;
         $newData['characters'] = json_decode($data->characters, true);
         $newData['details'] = json_decode($data->details, true);
+        $newData['rating'] = (int)$data->rating;
 
         return $newData;
     }

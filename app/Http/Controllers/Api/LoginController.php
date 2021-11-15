@@ -30,4 +30,19 @@ class LoginController extends Controller
         Users::logout($request->input('id'));
         return response()->json($res);
     }
+    public function checkUser(Request $request){
+        $data = [
+            'id' => $request->input('id'),
+            'session' => $request->input('session')
+        ];
+        $res = [
+            'confirm' => 'error'
+        ];
+        if(Users::checkAuth($data['id'], $data['session'])) {
+            $res = [
+                'confirm' => 'ok'
+            ];
+        }
+        return response()->json($res);
+    }
 }

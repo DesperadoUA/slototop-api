@@ -6,6 +6,7 @@ namespace App\Http\Controllers\Api;
 use Illuminate\Http\Request;
 use App\Models\Posts;
 use App\Validate;
+use App\Models\Cash;
 
 class AdminPaymentController extends BaseController
 {
@@ -72,6 +73,12 @@ class AdminPaymentController extends BaseController
             $response['body']['category'] = self::relativeCategoryPost($id, self::MAIN_TABLE,
                                                                           self::CATEGORY_TABLE,
                                                                            self::CATEGORY_RELATIVE);
+            $response['body']['payment_currency'] = self::relativePostPost($id, $this->tables['PAYMENT'],
+                                                                                $this->tables['CURRENCY'],
+                                                                                $this->tables['PAYMENT_CURRENCY_RELATIVE']);
+            $response['body']['payment_type_payment'] = self::relativePostPost($id, $this->tables['PAYMENT'],
+                                                                                    $this->tables['TYPE_PAYMENT'],
+                                                                                    $this->tables['PAYMENT_TYPE_PAYMENT_RELATIVE']);
             $response['confirm'] = 'ok';
         }
 
@@ -95,7 +102,14 @@ class AdminPaymentController extends BaseController
         self::updateCategory($data_request['id'], $data_request['category'], self::MAIN_TABLE,
                                                                           self::CATEGORY_TABLE,
                                                                            self::CATEGORY_RELATIVE);
+        self::updatePostPost($data_request['id'], $data_request['payment_currency'], $this->tables['PAYMENT'],
+                                                                                     $this->tables['CURRENCY'],
+                                                                                     $this->tables['PAYMENT_CURRENCY_RELATIVE']);
+        self::updatePostPost($data_request['id'], $data_request['payment_type_payment'], $this->tables['PAYMENT'],
+                                                                                         $this->tables['TYPE_PAYMENT'],
+                                                                                         $this->tables['PAYMENT_TYPE_PAYMENT_RELATIVE']);
 
+        Cash::deleteAll();
         return response()->json($response);
     }
 
@@ -127,6 +141,11 @@ class AdminPaymentController extends BaseController
         } else {
             $newData['commission'] = '';
         }
+        if (isset($data['withdrawal_period'])) {
+            $newData['withdrawal_period'] = $data['withdrawal_period'];
+        } else {
+            $newData['withdrawal_period'] = '';
+        }
         return $newData;
     }
 
@@ -136,6 +155,7 @@ class AdminPaymentController extends BaseController
         $newData['site'] = $data->site;
         $newData['withdrawal'] = $data->withdrawal;
         $newData['commission'] = $data->commission;
+        $newData['withdrawal_period'] = $data->withdrawal_period;
         return $newData;
     }
 }

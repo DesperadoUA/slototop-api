@@ -11,6 +11,8 @@ class AdminUploadsController extends Controller
 {
     const DIR_DOWNLOADS = '/downloads/';
     const DIR = '/downloads/';
+    const IMG_TYPE = ['png', 'jpg', 'jpeg'];
+    const REPLACE = ['', '', ''];
     public function index(Request $request)
     {
         $folderPath = $_SERVER['DOCUMENT_ROOT'].self::DIR_DOWNLOADS;
@@ -20,11 +22,12 @@ class AdminUploadsController extends Controller
         $image_type = $image_type_aux[1];
         $image_base64 = base64_decode($image_parts[1]);
         $uniq_id = uniqid();
-        $file = $folderPath . $uniq_id . '.'.$image_type;
-
+        $file_name = str_replace(self::IMG_TYPE, self::REPLACE, str_slug($file_data['name']));
+        $file = $folderPath .$file_name.'-'. $uniq_id . '.'.$image_type;
         file_put_contents($file, $image_base64);
         $response = [
-            'src' => url('/').self::DIR_DOWNLOADS.$uniq_id.'.'.$image_type
+            'src' => url('/').self::DIR_DOWNLOADS.$file_name.'-'. $uniq_id . '.'.$image_type
+            ,
         ];
         return response()->json($response);
     }
