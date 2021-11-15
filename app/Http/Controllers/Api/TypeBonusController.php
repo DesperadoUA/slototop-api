@@ -96,7 +96,7 @@ class TypeBonusController extends PostController
         $data = $category->getPublicPostByUrl($id);
         if(!$data->isEmpty()) {
             $response['body'] = $data[0];
-            $response['body'] = self::dataCommonDecode($data[0]);
+            $response['body'] = self::dataCategoryCommonDecode($data[0]);
 
             $response['body']['posts'] = [];
             $arr_posts = Relative::getPostIdByRelative($this->tables['TYPE_BONUS_CATEGORY_RELATIVE'], $data[0]->id);

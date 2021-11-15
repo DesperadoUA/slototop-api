@@ -45,4 +45,11 @@ class PostController extends Controller
         $newData['post_type'] = $data->post_type;
         return $newData;
     }
+    protected static function dataCategoryCommonDecode($data){
+        $newData = self::dataCommonDecode($data);
+        $newData['faq'] = empty(json_decode($data->faq, true))
+            ? []
+            : json_decode($data->faq, true);
+        return $newData;
+    }
 }

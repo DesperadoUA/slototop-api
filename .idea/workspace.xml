@@ -2,102 +2,21 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="612891bd-e6d1-407d-8831-4c27fedf3233" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/Api/AdminTypeBonusCategoryController.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/Api/AdminTypeBonusController.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/Api/BonusController.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/Api/CasinoController.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/Api/CountryController.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/Api/CurrencyController.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/Api/GameController.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/Api/LanguageController.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/Api/LicenseController.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/Api/PaymentController.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/Api/PokerController.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/Api/PostController.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/Api/TechnologyController.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/Api/TypeBonusController.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/Api/TypePaymentController.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/Api/VendorController.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/MigrateController.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/data.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/config/tables.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/database/migrations/2014_10_12_100000_typebonus_category.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/database/migrations/2014_10_12_100000_typebonuses.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/database/migrations/2014_10_12_100001_bonus_casino_relative.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/database/migrations/2014_10_12_100001_bonus_country_relative.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/database/migrations/2014_10_12_100001_bonus_type_bonus_relative.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/database/migrations/2014_10_12_100001_casino_country_relative.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/database/migrations/2014_10_12_100001_casino_currency_relative.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/database/migrations/2014_10_12_100001_casino_lang_relative.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/database/migrations/2014_10_12_100001_casino_license_relative.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/database/migrations/2014_10_12_100001_casino_payment_relative.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/database/migrations/2014_10_12_100001_casino_technology_relative.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/database/migrations/2014_10_12_100001_casino_type_bonus_relative.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/database/migrations/2014_10_12_100001_casino_type_payment_relative.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/database/migrations/2014_10_12_100001_casino_vendor_relative.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/database/migrations/2014_10_12_100001_game_vendor_relative.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/database/migrations/2014_10_12_100001_payment_currency_relative.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/database/migrations/2014_10_12_100001_payment_type_payment_relative.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/database/migrations/2014_10_12_100001_poker_country_relative.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/database/migrations/2014_10_12_100001_poker_currency_relative.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/database/migrations/2014_10_12_100001_poker_lang_relative.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/database/migrations/2014_10_12_100001_poker_license_relative.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/database/migrations/2014_10_12_100001_poker_payment_relative.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/database/migrations/2014_10_12_100001_poker_technology_relative.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/database/migrations/2014_10_12_100001_poker_type_payment_relative.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/database/migrations/2014_10_12_100001_typebonus_category_relative.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/database/migrations/2014_10_12_100001_typebonus_meta.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/database/migrations/2014_10_12_100001_vendor_country_relative.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/CardBuilder.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/CardBuilder.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Api/AdminBonusCategoryController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Api/AdminBonusCategoryController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Api/AdminBonusController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Api/AdminBonusController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Api/AdminCasinoCategoryController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Api/AdminCasinoCategoryController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Api/AdminCasinoController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Api/AdminCasinoController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Api/AdminCountryCategoryController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Api/AdminCountryCategoryController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Api/AdminCountryController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Api/AdminCountryController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Api/AdminCurrencyCategoryController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Api/AdminCurrencyCategoryController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Api/AdminCurrencyController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Api/AdminCurrencyController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Api/AdminGameCategoryController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Api/AdminGameCategoryController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Api/AdminGameController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Api/AdminGameController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Api/AdminLanguageCategoryController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Api/AdminLanguageCategoryController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Api/AdminLanguageController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Api/AdminLanguageController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Api/AdminLicenseCategoryController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Api/AdminLicenseCategoryController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Api/AdminLicenseController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Api/AdminLicenseController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Api/AdminPageController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Api/AdminPageController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Api/AdminPaymentCategoryController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Api/AdminPaymentCategoryController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Api/AdminPaymentController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Api/AdminPaymentController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Api/AdminPokerCategoryController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Api/AdminPokerCategoryController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Api/AdminPokerController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Api/AdminPokerController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Api/AdminTechnologyCategoryController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Api/AdminTechnologyCategoryController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Api/AdminTechnologyController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Api/AdminTechnologyController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Api/AdminTypePaymentCategoryController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Api/AdminTypePaymentCategoryController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Api/AdminTypePaymentController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Api/AdminTypePaymentController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Api/AdminUploadsController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Api/AdminUploadsController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Api/AdminVendorCategoryController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Api/AdminVendorCategoryController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Api/AdminVendorController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Api/AdminVendorController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Api/BaseController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Api/BaseController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Api/LoginController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Api/LoginController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Api/PageController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Api/PageController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Models/Category.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/Category.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Models/Pages.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/Pages.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Models/Posts.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/Posts.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/constants.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/constants.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/migrations/2014_10_12_100000_bonus_category.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2014_10_12_100000_bonus_category.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/migrations/2014_10_12_100000_casino_category.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2014_10_12_100000_casino_category.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/migrations/2014_10_12_100000_country_category.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2014_10_12_100000_country_category.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/migrations/2014_10_12_100000_currency_category.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2014_10_12_100000_currency_category.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/migrations/2014_10_12_100000_game_category.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2014_10_12_100000_game_category.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/migrations/2014_10_12_100000_language_category.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2014_10_12_100000_language_category.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/migrations/2014_10_12_100000_license_category.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2014_10_12_100000_license_category.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/migrations/2014_10_12_100000_payment_category.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2014_10_12_100000_payment_category.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/migrations/2014_10_12_100000_poker_category.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2014_10_12_100000_poker_category.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/migrations/2014_10_12_100000_technology_category.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2014_10_12_100000_technology_category.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/migrations/2014_10_12_100000_typepayment_category.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2014_10_12_100000_typepayment_category.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/migrations/2014_10_12_100000_vendor_category.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2014_10_12_100000_vendor_category.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/migrations/2014_10_12_100001_payment_meta.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2014_10_12_100001_payment_meta.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/api.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/api.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Api/BonusController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Api/BonusController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Api/CasinoController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Api/CasinoController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Api/CountryController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Api/CountryController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Api/CurrencyController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Api/CurrencyController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Api/GameController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Api/GameController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Api/LanguageController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Api/LanguageController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Api/LicenseController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Api/LicenseController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Api/PaymentController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Api/PaymentController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Api/PokerController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Api/PokerController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Api/PostController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Api/PostController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Api/TechnologyController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Api/TechnologyController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Api/TypeBonusController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Api/TypeBonusController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Api/TypePaymentController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Api/TypePaymentController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Api/VendorController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Api/VendorController.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -111,51 +30,132 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Api/AdminTypePaymentCategoryController.php">
+        <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Api/GameController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="176">
-              <caret line="123" column="44" lean-forward="true" selection-start-line="121" selection-start-column="7" selection-end-line="123" selection-end-column="44" />
+            <state relative-caret-position="202">
+              <caret line="122" column="73" selection-start-line="122" selection-start-column="73" selection-end-line="122" selection-end-column="73" />
               <folding>
-                <element signature="e#45#73#0#PHP" expanded="true" />
-                <element signature="e#453#1772#0#PHP" />
-                <element signature="e#1777#2300#0#PHP" />
-                <element signature="e#2305#3039#0#PHP" />
-                <element signature="e#3044#3864#0#PHP" />
-                <element signature="e#3869#4258#0#PHP" />
+                <element signature="e#399#1699#0#PHP" />
+                <element signature="e#1832#4192#0#PHP" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Api/AdminVendorCategoryController.php">
+        <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Api/CountryController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="279">
-              <caret line="123" column="44" lean-forward="true" selection-start-line="121" selection-start-column="8" selection-end-line="123" selection-end-column="44" />
+            <state relative-caret-position="189">
+              <caret line="98" column="73" selection-start-line="98" selection-start-column="73" selection-end-line="98" selection-end-column="73" />
               <folding>
-                <element signature="e#45#73#0#PHP" expanded="true" />
-                <element signature="e#427#1746#0#PHP" />
-                <element signature="e#1751#2274#0#PHP" />
-                <element signature="e#2279#3013#0#PHP" />
-                <element signature="e#3018#3838#0#PHP" />
-                <element signature="e#3085#3152#0#PHP" />
-                <element signature="e#3843#4232#0#PHP" />
+                <element signature="e#348#1648#0#PHP" />
+                <element signature="e#1781#2850#0#PHP" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Api/CurrencyController.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="238">
+              <caret line="98" column="73" selection-start-line="98" selection-start-column="73" selection-end-line="98" selection-end-column="73" />
+              <folding>
+                <element signature="e#349#1649#0#PHP" />
+                <element signature="e#1782#2856#0#PHP" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Api/LanguageController.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="290">
+              <caret line="98" column="73" selection-start-line="98" selection-start-column="73" selection-end-line="98" selection-end-column="73" />
+              <folding>
+                <element signature="e#349#1649#0#PHP" />
+                <element signature="e#1782#2854#0#PHP" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Api/LicenseController.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="152">
+              <caret line="98" column="73" selection-start-line="98" selection-start-column="73" selection-end-line="98" selection-end-column="73" />
+              <folding>
+                <element signature="e#348#1648#0#PHP" />
+                <element signature="e#1781#2850#0#PHP" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Api/PaymentController.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="242">
+              <caret line="112" column="73" selection-start-line="112" selection-start-column="73" selection-end-line="112" selection-end-column="73" />
+              <folding>
+                <element signature="e#348#1648#0#PHP" />
+                <element signature="e#1781#3777#0#PHP" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Api/TechnologyController.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="239">
+              <caret line="98" column="73" selection-start-line="98" selection-start-column="73" selection-end-line="98" selection-end-column="73" />
+              <folding>
+                <element signature="e#351#1651#0#PHP" />
+                <element signature="e#1784#2862#0#PHP" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Api/TypeBonusController.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="190">
+              <caret line="98" column="73" selection-start-line="98" selection-start-column="73" selection-end-line="98" selection-end-column="73" />
+              <folding>
+                <element signature="e#350#1650#0#PHP" />
+                <element signature="e#1783#2855#0#PHP" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Api/TypePaymentController.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="191">
+              <caret line="98" column="73" selection-start-line="98" selection-start-column="73" selection-end-line="98" selection-end-column="73" />
+              <folding>
+                <element signature="e#352#1652#0#PHP" />
+                <element signature="e#1785#2871#0#PHP" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Api/AdminTypeBonusCategoryController.php">
+        <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Api/VendorController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="288">
-              <caret line="123" column="44" selection-start-line="123" selection-start-column="44" selection-end-line="123" selection-end-column="44" />
+            <state relative-caret-position="166">
+              <caret line="52" column="7" lean-forward="true" selection-start-line="52" selection-start-column="7" selection-end-line="52" selection-end-column="7" />
               <folding>
-                <element signature="e#45#73#0#PHP" expanded="true" />
-                <element signature="e#442#1761#0#PHP" />
-                <element signature="e#1766#2289#0#PHP" />
-                <element signature="e#2294#3028#0#PHP" />
-                <element signature="e#4442#5472#0#PHP" />
+                <element signature="e#347#1647#0#PHP" />
+                <element signature="e#1780#3724#0#PHP" />
+                <element signature="e#3729#4976#0#PHP" />
+                <element signature="e#4981#5275#0#PHP" />
               </folding>
             </state>
           </provider>
@@ -205,31 +205,16 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/app/Http/Controllers/Api/PaymentController.php" />
-        <option value="$PROJECT_DIR$/app/Http/Controllers/Api/TechnologyController.php" />
-        <option value="$PROJECT_DIR$/app/Http/Controllers/Api/TypeBonusController.php" />
-        <option value="$PROJECT_DIR$/app/Http/Controllers/Api/TypePaymentController.php" />
-        <option value="$PROJECT_DIR$/app/Http/Controllers/Api/VendorController.php" />
-        <option value="$PROJECT_DIR$/app/Http/Controllers/Api/AdminPageController.php" />
-        <option value="$PROJECT_DIR$/app/Http/Controllers/Api/AdminBonusController.php" />
-        <option value="$PROJECT_DIR$/app/Http/Controllers/Api/AdminCasinoController.php" />
-        <option value="$PROJECT_DIR$/app/Http/Controllers/Api/AdminCountryController.php" />
-        <option value="$PROJECT_DIR$/app/Http/Controllers/Api/AdminCurrencyController.php" />
-        <option value="$PROJECT_DIR$/app/Http/Controllers/Api/AdminGameController.php" />
-        <option value="$PROJECT_DIR$/app/Http/Controllers/Api/AdminLanguageController.php" />
-        <option value="$PROJECT_DIR$/app/Http/Controllers/Api/AdminLicenseController.php" />
         <option value="$PROJECT_DIR$/app/Http/Controllers/Api/AdminPaymentController.php" />
         <option value="$PROJECT_DIR$/app/Http/Controllers/Api/AdminPokerController.php" />
         <option value="$PROJECT_DIR$/app/Http/Controllers/Api/AdminTechnologyController.php" />
         <option value="$PROJECT_DIR$/app/Http/Controllers/Api/AdminTypeBonusController.php" />
         <option value="$PROJECT_DIR$/app/Http/Controllers/Api/AdminTypePaymentController.php" />
         <option value="$PROJECT_DIR$/app/Http/Controllers/Api/AdminVendorController.php" />
-        <option value="$PROJECT_DIR$/app/Http/Controllers/Api/PokerController.php" />
         <option value="$PROJECT_DIR$/app/Models/Posts.php" />
         <option value="$PROJECT_DIR$/routes/api.php" />
         <option value="$PROJECT_DIR$/config/tables.php" />
         <option value="$PROJECT_DIR$/app/Http/Controllers/Api/PageController.php" />
-        <option value="$PROJECT_DIR$/app/Http/Controllers/Api/BaseController.php" />
         <option value="$PROJECT_DIR$/app/Http/Controllers/Api/AdminCasinoCategoryController.php" />
         <option value="$PROJECT_DIR$/database/migrations/2014_10_12_100000_casino_category.php" />
         <option value="$PROJECT_DIR$/database/migrations/2014_10_12_100000_poker_category.php" />
@@ -256,6 +241,21 @@
         <option value="$PROJECT_DIR$/app/Http/Controllers/Api/AdminTypePaymentCategoryController.php" />
         <option value="$PROJECT_DIR$/app/Http/Controllers/Api/AdminVendorCategoryController.php" />
         <option value="$PROJECT_DIR$/app/Http/Controllers/Api/AdminTypeBonusCategoryController.php" />
+        <option value="$PROJECT_DIR$/app/Http/Controllers/Api/BonusController.php" />
+        <option value="$PROJECT_DIR$/app/Http/Controllers/Api/BaseController.php" />
+        <option value="$PROJECT_DIR$/app/Http/Controllers/Api/PostController.php" />
+        <option value="$PROJECT_DIR$/app/Http/Controllers/Api/CasinoController.php" />
+        <option value="$PROJECT_DIR$/app/Http/Controllers/Api/PokerController.php" />
+        <option value="$PROJECT_DIR$/app/Http/Controllers/Api/GameController.php" />
+        <option value="$PROJECT_DIR$/app/Http/Controllers/Api/CountryController.php" />
+        <option value="$PROJECT_DIR$/app/Http/Controllers/Api/CurrencyController.php" />
+        <option value="$PROJECT_DIR$/app/Http/Controllers/Api/LanguageController.php" />
+        <option value="$PROJECT_DIR$/app/Http/Controllers/Api/LicenseController.php" />
+        <option value="$PROJECT_DIR$/app/Http/Controllers/Api/PaymentController.php" />
+        <option value="$PROJECT_DIR$/app/Http/Controllers/Api/TechnologyController.php" />
+        <option value="$PROJECT_DIR$/app/Http/Controllers/Api/TypeBonusController.php" />
+        <option value="$PROJECT_DIR$/app/Http/Controllers/Api/TypePaymentController.php" />
+        <option value="$PROJECT_DIR$/app/Http/Controllers/Api/VendorController.php" />
       </list>
     </option>
   </component>
@@ -513,12 +513,12 @@
       <workItem from="1636472196180" duration="15000" />
       <workItem from="1636624353594" duration="2826000" />
       <workItem from="1636700033709" duration="4938000" />
-      <workItem from="1636968661914" duration="8059000" />
+      <workItem from="1636968661914" duration="9914000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="418094000" />
+    <option name="totallyTimeSpent" value="419949000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
@@ -563,170 +563,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Api/AdminCountryController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="302">
-          <caret line="99" column="26" selection-start-line="99" selection-start-column="26" selection-end-line="99" selection-end-column="26" />
-          <folding>
-            <element signature="e#45#73#0#PHP" expanded="true" />
-            <element signature="e#409#1575#0#PHP" />
-            <element signature="e#1581#2157#0#PHP" />
-            <element signature="e#2163#2946#0#PHP" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Api/AdminCurrencyController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="99" column="26" selection-start-line="99" selection-start-column="26" selection-end-line="99" selection-end-column="26" />
-          <folding>
-            <element signature="e#45#73#0#PHP" expanded="true" />
-            <element signature="e#415#1581#0#PHP" />
-            <element signature="e#1587#2163#0#PHP" />
-            <element signature="e#2169#2954#0#PHP" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Api/AdminGameController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="340">
-          <caret line="107" column="26" selection-start-line="107" selection-start-column="26" selection-end-line="107" selection-end-column="26" />
-          <folding>
-            <element signature="e#45#73#0#PHP" expanded="true" />
-            <element signature="e#483#1649#0#PHP" />
-            <element signature="e#1655#2231#0#PHP" />
-            <element signature="e#2237#3236#0#PHP" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Api/AdminLanguageController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="358">
-          <caret line="99" column="26" selection-start-line="99" selection-start-column="26" selection-end-line="99" selection-end-column="26" />
-          <folding>
-            <element signature="e#45#73#0#PHP" expanded="true" />
-            <element signature="e#410#1576#0#PHP" />
-            <element signature="e#1582#2158#0#PHP" />
-            <element signature="e#2164#2947#0#PHP" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Api/AdminLicenseController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="391">
-          <caret line="99" column="26" selection-start-line="99" selection-start-column="26" selection-end-line="99" selection-end-column="26" />
-          <folding>
-            <element signature="e#45#73#0#PHP" expanded="true" />
-            <element signature="e#1580#2156#0#PHP" />
-            <element signature="e#2162#2945#0#PHP" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Api/AdminPageController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-268">
-          <caret line="11" column="6" selection-start-line="11" selection-start-column="6" selection-end-line="11" selection-end-column="6" />
-          <folding>
-            <element signature="e#44#64#0#PHP" expanded="true" />
-            <element signature="e#557#1758#0#PHP" />
-            <element signature="e#1891#2283#0#PHP" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Api/AdminPaymentController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="304">
-          <caret line="111" column="26" selection-start-line="111" selection-start-column="26" selection-end-line="111" selection-end-column="26" />
-          <folding>
-            <element signature="e#45#73#0#PHP" expanded="true" />
-            <element signature="e#408#1574#0#PHP" />
-            <element signature="e#1580#2156#0#PHP" />
-            <element signature="e#2162#3643#0#PHP" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Api/AdminPokerController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1292">
-          <caret line="154" column="26" selection-start-line="154" selection-start-column="26" selection-end-line="154" selection-end-column="26" />
-          <folding>
-            <element signature="e#45#73#0#PHP" expanded="true" />
-            <element signature="e#1130#2296#0#PHP" />
-            <element signature="e#2302#2878#0#PHP" />
-            <element signature="e#2884#5300#0#PHP" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Api/AdminTechnologyController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="714">
-          <caret line="99" column="26" selection-start-line="99" selection-start-column="26" selection-end-line="99" selection-end-column="26" />
-          <folding>
-            <element signature="e#45#73#0#PHP" expanded="true" />
-            <element signature="e#427#1593#0#PHP" />
-            <element signature="e#1599#2175#0#PHP" />
-            <element signature="e#2181#2964#0#PHP" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Api/AdminTypeBonusController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="714">
-          <caret line="99" column="26" selection-start-line="99" selection-start-column="26" selection-end-line="99" selection-end-column="26" />
-          <folding>
-            <element signature="e#45#73#0#PHP" expanded="true" />
-            <element signature="e#426#1592#0#PHP" />
-            <element signature="e#1598#2174#0#PHP" />
-            <element signature="e#2180#2963#0#PHP" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Api/AdminTypePaymentController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="697">
-          <caret line="98" column="26" selection-start-line="98" selection-start-column="26" selection-end-line="98" selection-end-column="26" />
-          <folding>
-            <element signature="e#45#73#0#PHP" expanded="true" />
-            <element signature="e#437#1603#0#PHP" />
-            <element signature="e#1609#2185#0#PHP" />
-            <element signature="e#2191#2974#0#PHP" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Api/AdminUploadsController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="9" column="6" selection-start-line="9" selection-start-column="6" selection-end-line="9" selection-end-column="6" />
-          <folding>
-            <element signature="e#44#72#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Api/AdminVendorController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="340">
-          <caret line="107" column="26" selection-start-line="107" selection-start-column="26" selection-end-line="107" selection-end-column="26" />
-          <folding>
-            <element signature="e#45#73#0#PHP" expanded="true" />
-            <element signature="e#504#1670#0#PHP" />
-            <element signature="e#1676#2252#0#PHP" />
-            <element signature="e#2258#3353#0#PHP" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/Models/Relative.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="85">
@@ -807,13 +643,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="318">
           <caret line="62" column="47" selection-start-line="62" selection-start-column="47" selection-end-line="62" selection-end-column="47" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Api/PokerController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="308">
-          <caret line="122" column="68" selection-start-line="122" selection-start-column="68" selection-end-line="122" selection-end-column="68" />
         </state>
       </provider>
     </entry>
@@ -982,20 +811,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Api/BaseController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-880">
-          <caret line="393" column="30" selection-start-line="393" selection-start-column="30" selection-end-line="393" selection-end-column="30" />
-          <folding>
-            <element signature="e#686#1647#0#PHP" />
-            <element signature="e#1652#4884#0#PHP" />
-            <element signature="e#4889#5576#0#PHP" />
-            <element signature="e#5581#6237#0#PHP" />
-            <element signature="e#6242#9182#0#PHP" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Api/AdminBonusCategoryController.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="217">
@@ -1140,13 +955,191 @@
     <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Api/AdminTypeBonusCategoryController.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="288">
-          <caret line="123" column="44" selection-start-line="123" selection-start-column="44" selection-end-line="123" selection-end-column="44" />
+          <caret line="123" column="44" lean-forward="true" selection-start-line="121" selection-start-column="8" selection-end-line="123" selection-end-column="44" />
           <folding>
             <element signature="e#45#73#0#PHP" expanded="true" />
             <element signature="e#442#1761#0#PHP" />
             <element signature="e#1766#2289#0#PHP" />
             <element signature="e#2294#3028#0#PHP" />
             <element signature="e#4442#5472#0#PHP" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Api/BaseController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="81">
+          <caret line="46" column="5" selection-start-line="46" selection-start-column="5" selection-end-line="46" selection-end-column="5" />
+          <folding>
+            <element signature="e#1652#4884#0#PHP" />
+            <element signature="e#4889#5576#0#PHP" />
+            <element signature="e#5581#6237#0#PHP" />
+            <element signature="e#6242#9182#0#PHP" />
+            <element signature="e#9187#12280#0#PHP" />
+            <element signature="e#12285#15359#0#PHP" />
+            <element signature="e#15364#16159#0#PHP" />
+            <element signature="e#16164#17060#0#PHP" />
+            <element signature="e#17065#17870#0#PHP" />
+            <element signature="e#17875#19081#0#PHP" />
+            <element signature="e#19086#20217#0#PHP" />
+            <element signature="e#20222#21093#0#PHP" />
+            <element signature="e#21098#21961#0#PHP" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Api/PostController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="302">
+          <caret line="47" column="30" selection-start-line="47" selection-start-column="30" selection-end-line="47" selection-end-column="30" />
+          <folding>
+            <element signature="e#448#1688#0#PHP" />
+            <element signature="e#1693#1957#0#PHP" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Api/BonusController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="285">
+          <caret line="126" column="73" lean-forward="true" selection-start-line="126" selection-start-column="32" selection-end-line="126" selection-end-column="73" />
+          <folding>
+            <element signature="e#346#1646#0#PHP" />
+            <element signature="e#1779#4484#0#PHP" />
+            <element signature="e#5733#6141#0#PHP" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Api/CasinoController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="289">
+          <caret line="146" column="73" selection-start-line="146" selection-start-column="73" selection-end-line="146" selection-end-column="73" />
+          <folding>
+            <element signature="e#347#1647#0#PHP" />
+            <element signature="e#1780#6464#0#PHP" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Api/PokerController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="226">
+          <caret line="146" column="73" selection-start-line="146" selection-start-column="73" selection-end-line="146" selection-end-column="73" />
+          <folding>
+            <element signature="e#1816#6194#0#PHP" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Api/GameController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="202">
+          <caret line="122" column="73" selection-start-line="122" selection-start-column="73" selection-end-line="122" selection-end-column="73" />
+          <folding>
+            <element signature="e#399#1699#0#PHP" />
+            <element signature="e#1832#4192#0#PHP" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Api/CountryController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="189">
+          <caret line="98" column="73" selection-start-line="98" selection-start-column="73" selection-end-line="98" selection-end-column="73" />
+          <folding>
+            <element signature="e#348#1648#0#PHP" />
+            <element signature="e#1781#2850#0#PHP" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Api/CurrencyController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="98" column="73" selection-start-line="98" selection-start-column="73" selection-end-line="98" selection-end-column="73" />
+          <folding>
+            <element signature="e#349#1649#0#PHP" />
+            <element signature="e#1782#2856#0#PHP" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Api/LanguageController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="290">
+          <caret line="98" column="73" selection-start-line="98" selection-start-column="73" selection-end-line="98" selection-end-column="73" />
+          <folding>
+            <element signature="e#349#1649#0#PHP" />
+            <element signature="e#1782#2854#0#PHP" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Api/LicenseController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="152">
+          <caret line="98" column="73" selection-start-line="98" selection-start-column="73" selection-end-line="98" selection-end-column="73" />
+          <folding>
+            <element signature="e#348#1648#0#PHP" />
+            <element signature="e#1781#2850#0#PHP" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Api/PaymentController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="242">
+          <caret line="112" column="73" selection-start-line="112" selection-start-column="73" selection-end-line="112" selection-end-column="73" />
+          <folding>
+            <element signature="e#348#1648#0#PHP" />
+            <element signature="e#1781#3777#0#PHP" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Api/TechnologyController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="239">
+          <caret line="98" column="73" selection-start-line="98" selection-start-column="73" selection-end-line="98" selection-end-column="73" />
+          <folding>
+            <element signature="e#351#1651#0#PHP" />
+            <element signature="e#1784#2862#0#PHP" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Api/TypeBonusController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="190">
+          <caret line="98" column="73" selection-start-line="98" selection-start-column="73" selection-end-line="98" selection-end-column="73" />
+          <folding>
+            <element signature="e#350#1650#0#PHP" />
+            <element signature="e#1783#2855#0#PHP" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Api/TypePaymentController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="191">
+          <caret line="98" column="73" selection-start-line="98" selection-start-column="73" selection-end-line="98" selection-end-column="73" />
+          <folding>
+            <element signature="e#352#1652#0#PHP" />
+            <element signature="e#1785#2871#0#PHP" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Api/VendorController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="166">
+          <caret line="52" column="7" lean-forward="true" selection-start-line="52" selection-start-column="7" selection-end-line="52" selection-end-column="7" />
+          <folding>
+            <element signature="e#347#1647#0#PHP" />
+            <element signature="e#1780#3724#0#PHP" />
+            <element signature="e#3729#4976#0#PHP" />
+            <element signature="e#4981#5275#0#PHP" />
           </folding>
         </state>
       </provider>
